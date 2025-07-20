@@ -29,10 +29,10 @@ const Layout = ({ children }: LayoutProps) => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-white border-t border-gray-200 mt-auto">
+      <footer className="border-t border-gray-200 mt-auto">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center text-gray-600">
-            <p>&copy; 2024 TypelyFun. 재미있는 성향 테스트 플랫폼</p>
+            <p>&copy; 2024 TypelyFun. 재미있는 성향 테스트</p>
             <p className="mt-2 text-sm">
               <a href="https://TypelyFun.web.app" className="text-primary-600 hover:text-primary-700">
                 https://TypelyFun.web.app

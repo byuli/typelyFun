@@ -5,18 +5,67 @@ import { useQuizStore } from '../store/quizStore';
 import { Share2, RefreshCw, Home, Heart, XCircle, ArrowLeft } from 'lucide-react';
 
 const QuizResult = () => {
-  const { id } = useParams<{ id: string }>();
+  const { id, resultType: urlResultType } = useParams<{ id: string; resultType?: string }>();
   const navigate = useNavigate();
   const location = useLocation();
   const [searchParams] = useSearchParams();
-  const { quizState, resetQuiz } = useQuizStore();
+  const { quizState, resetQuiz, completeQuiz } = useQuizStore();
   const [copied, setCopied] = useState(false);
 
   const quiz = getQuizById(id!);
-  const resultType = searchParams.get('type');
+  const queryResultType = searchParams.get('type');
+  const resultData = searchParams.get('data');
+  
+  // URL 파라미터 또는 쿼리 파라미터에서 결과 타입 가져오기
+  const finalResultType = urlResultType || queryResultType;
   
   // location.state에서 결과 데이터 가져오기
   const resultFromState = location.state?.result;
+
+  // 결과 타입을 URL 친화적인 슬러그로 변환하는 함수
+  const createResultSlug = (title: string) => {
+    return title
+      .replace(/[^\w\s가-힣]/g, '') // 특수문자 제거
+      .replace(/\s+/g, '-') // 공백을 하이픈으로 변환
+      .toLowerCase();
+  };
+
+  // 슬러그를 결과 타입으로 변환하는 함수
+  const getResultTypeFromSlug = (slug: string) => {
+    if (!quiz) return null;
+    
+    try {
+      // 각 퀴즈의 모든 가능한 결과를 생성하여 매칭
+      const possibleResults = [];
+      
+      // 간단한 방법: 각 질문에 대해 첫 번째 옵션을 선택한 결과 생성
+      const answers1 = quiz.questions.map(() => quiz.questions[0].options[0].value);
+      const result1 = quiz.resultMapping(answers1 as string[] | number[]);
+      possibleResults.push(result1);
+      
+      // 두 번째 옵션을 선택한 결과 생성
+      const answers2 = quiz.questions.map(() => quiz.questions[0].options[1]?.value || quiz.questions[0].options[0].value);
+      const result2 = quiz.resultMapping(answers2 as string[] | number[]);
+      possibleResults.push(result2);
+      
+      // 혼합 결과 생성 (균형잡힌 결과)
+      const mixedAnswers = quiz.questions.map((_, index) => 
+        index % 2 === 0 ? quiz.questions[index].options[0].value : (quiz.questions[index].options[1]?.value || quiz.questions[index].options[0].value)
+      );
+      const result3 = quiz.resultMapping(mixedAnswers as string[] | number[]);
+      possibleResults.push(result3);
+      
+      // 슬러그와 매칭되는 결과 찾기
+      const matchedResult = possibleResults.find(result => 
+        createResultSlug(result.title) === slug
+      );
+      
+      return matchedResult;
+    } catch (error) {
+      console.error('결과 생성 중 오류:', error);
+      return null;
+    }
+  };
 
   useEffect(() => {
     if (!quiz) {
@@ -24,12 +73,24 @@ const QuizResult = () => {
       return;
     }
 
-    // URL에서 타입이 있으면 해당 결과를 사용, 없으면 스토어의 결과 사용
-    if (resultType && !quizState.result) {
-      // URL 파라미터로 결과를 복원하는 로직
-      // 실제로는 더 복잡한 매핑이 필요할 수 있음
+    // URL에서 결과 타입을 기반으로 결과를 복원하는 로직
+    if (finalResultType && !quizState.result && !resultFromState) {
+      const generatedResult = getResultTypeFromSlug(finalResultType);
+      if (generatedResult) {
+        completeQuiz(generatedResult);
+      }
     }
-  }, [id, quiz, resultType, quizState.result, navigate, resultFromState]);
+    
+    // URL에서 결과 데이터를 복원하는 로직 (기존 방식 지원)
+    if (resultData && !quizState.result && !resultFromState) {
+      try {
+        const decodedResult = JSON.parse(decodeURIComponent(resultData));
+        completeQuiz(decodedResult);
+      } catch (error) {
+        console.error('결과 복원 중 오류:', error);
+      }
+    }
+  }, [id, quiz, finalResultType, quizState.result, navigate, resultFromState, completeQuiz]);
 
   if (!quiz) {
     return null;
@@ -52,7 +113,7 @@ const QuizResult = () => {
     );
   }
 
-  const shareUrl = `${window.location.origin}/quiz/${id}/result?type=${encodeURIComponent(result.title)}`;
+  const shareUrl = `${window.location.origin}/quiz/${id}/result/${createResultSlug(result.title)}`;
 
   const handleShare = async () => {
     try {
@@ -79,14 +140,22 @@ const QuizResult = () => {
 
   return (
     <div className="max-w-4xl mx-auto">
-      {/* Back Button */}
-      <div className="mb-6">
+      {/* Navigation Buttons */}
+      <div className="mb-6 flex justify-between items-center">
         <button
           onClick={() => navigate(`/quiz/${id}`)}
           className="inline-flex items-center text-sm text-gray-600 hover:text-primary-600 transition-colors"
         >
           <ArrowLeft className="h-4 w-4 mr-1" />
           테스트로 돌아가기
+        </button>
+        
+        <button
+          onClick={() => navigate('/')}
+          className="inline-flex items-center text-sm text-gray-600 hover:text-primary-600 transition-colors"
+        >
+          <Home className="h-4 w-4 mr-1" />
+          홈으로 가기
         </button>
       </div>
 

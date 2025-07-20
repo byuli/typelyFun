@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getQuizById } from '../data/quizzes';
 import { useQuizStore } from '../store/quizStore';
-import { ArrowLeft, ArrowRight, Check } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Check, Home } from 'lucide-react';
 
 const QuizPlay = () => {
   const { id } = useParams<{ id: string }>();
@@ -112,6 +112,17 @@ const QuizPlay = () => {
 
   return (
     <div className="max-w-2xl mx-auto">
+      {/* Home Button */}
+      <div className="mb-6">
+        <button
+          onClick={() => navigate('/')}
+          className="inline-flex items-center text-sm text-gray-600 hover:text-primary-600 transition-colors"
+        >
+          <Home className="h-4 w-4 mr-1" />
+          홈으로 가기
+        </button>
+      </div>
+
       {/* Progress Bar */}
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
