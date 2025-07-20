@@ -1,10 +1,16 @@
 import { Link } from 'react-router-dom';
 import { quizzes } from '../data/quizzes';
-import { Clock, Users, TrendingUp, Heart, Zap, Target, ArrowRight, Play, CheckCircle } from 'lucide-react';
+import { Clock, Users, TrendingUp, Heart, Zap, Target, ArrowRight, Play, CheckCircle, Shuffle } from 'lucide-react';
 
 const Home = () => {
   // 인기 퀴즈 (상위 3개)
   const popularQuizzes = quizzes.slice(0, 3);
+
+  // 랜덤 퀴즈 선택 함수
+  const getRandomQuiz = () => {
+    const randomIndex = Math.floor(Math.random() * quizzes.length);
+    return quizzes[randomIndex];
+  };
 
   return (
     <div className="space-y-16">
@@ -63,11 +69,11 @@ const Home = () => {
         {/* CTA Button */}
         <div className="pt-4">
           <Link
-            to={`/quiz/${popularQuizzes[0]?.id}`}
+            to={`/quiz/${getRandomQuiz().id}`}
             className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-colors duration-200 shadow-sm hover:shadow-md"
           >
-            <Play className="h-4 w-4 mr-2" />
-            첫 번째 테스트 시작하기
+            <Shuffle className="h-4 w-4 mr-2" />
+            랜덤 테스트 시작하기
           </Link>
         </div>
       </div>
@@ -192,11 +198,11 @@ const Home = () => {
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Link
-            to={`/quiz/${popularQuizzes[0]?.id}`}
+            to={`/quiz/${getRandomQuiz().id}`}
             className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-colors duration-200 shadow-sm hover:shadow-md"
           >
-            <Play className="h-4 w-4 mr-2" />
-            테스트 시작하기
+            <Shuffle className="h-4 w-4 mr-2" />
+            랜덤 테스트 시작하기
           </Link>
           
           <div className="flex items-center space-x-4 text-gray-600">
