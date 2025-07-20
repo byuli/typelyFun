@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  --color-gray-50: oklch(0.985 0.002 247.839);
+  --color-gray-100: oklch(0.967 0.003 264.542);
+  --color-gray-200: oklch(0.928 0.006 264.531);
+  --color-gray-300: oklch(0.872 0.01 258.338);
+  --color-gray-400: oklch(0.707 0.022 261.325);
+  --color-gray-500: oklch(0.551 0.027 264.364);
+  --color-gray-600: oklch(0.446 0.03 256.802);
+  --color-gray-700: oklch(0.373 0.034 259.733);
+  --color-gray-800: oklch(0.278 0.033 256.848);
+  --color-gray-900: oklch(0.21 0.034 264.665);
+  --color-gray-950: oklch(0.13 0.028 261.692);
+
+  --color-primary-50: #eff6ff;
+  --color-primary-100: #dbeafe;
+  --color-primary-200: #bfdbfe;
+  --color-primary-300: #93c5fd;
+  --color-primary-400: #60a5fa;
+  --color-primary-500: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-primary-900: #1e3a8a;
+
+  --color-red-50: oklch(0.971 0.013 17.38);
+  --color-red-100: oklch(0.936 0.032 17.717);
+  --color-red-200: oklch(0.885 0.062 18.334);
+  --color-red-300: oklch(0.808 0.114 19.571);
+  --color-red-400: oklch(0.704 0.191 22.216);
+  --color-red-500: oklch(0.637 0.237 25.331);
+  --color-red-600: oklch(0.577 0.245 27.325);
+  --color-red-700: oklch(0.505 0.213 27.518);
+  --color-red-800: oklch(0.444 0.177 26.899);
+  --color-red-900: oklch(0.396 0.141 25.723);
+  --color-red-950: oklch(0.258 0.092 26.042);
+
+  --color-green-50: oklch(0.982 0.018 155.826);
+  --color-green-100: oklch(0.962 0.044 156.743);
+  --color-green-200: oklch(0.925 0.084 155.995);
+  --color-green-300: oklch(0.871 0.15 154.449);
+  --color-green-400: oklch(0.792 0.209 151.711);
+  --color-green-500: oklch(0.723 0.219 149.579);
+  --color-green-600: oklch(0.627 0.194 149.214);
+  --color-green-700: oklch(0.527 0.154 150.069);
+  --color-green-800: oklch(0.448 0.119 151.328);
+  --color-green-900: oklch(0.393 0.095 152.535);
+  --color-green-950: oklch(0.266 0.065 152.934);
+}
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  /* GitHub 스타일 버튼 */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-colors duration-200 shadow-sm hover:shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-gray-300 text-gray-700 font-medium rounded-md hover:bg-gray-50 transition-colors duration-200;
+  }
+  
+  /* GitHub 스타일 카드 */
+  .card {
+    @apply bg-white border border-gray-200 rounded-lg p-8;
+  }
+  
+  /* GitHub 스타일 퀴즈 옵션 */
+  .quiz-option {
+    @apply w-full p-4 text-left border rounded-lg transition-all duration-200 cursor-pointer;
+  }
+  
+  .quiz-option.selected {
+    @apply border-primary-500 bg-primary-50 text-primary-700;
+  }
+  
+  .quiz-option:not(.selected) {
+    @apply border-gray-200 bg-white text-gray-700 hover:border-primary-300 hover:bg-gray-50;
+  }
+} 
