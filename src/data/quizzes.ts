@@ -4,7 +4,7 @@ export const quizzes: Quiz[] = [
   {
     id: 'personality-type',
     title: '성격 유형 테스트',
-    description: '당신의 성격 유형을 알아보세요',
+    description: '외향적인가요? 내향적인가요? 16가지 성격 유형으로 당신을 발견해보세요',
     category: '성격',
     duration: '1분 30초',
     questionCount: 16,
@@ -148,7 +148,7 @@ export const quizzes: Quiz[] = [
 
       const results = {
         'INTJ': {
-          title: '전략가 (INTJ)',
+          title: '전략가',
           description: '창의적이고 전략적인 사고를 가진 혁신가입니다.',
           detailedDescription: '당신은 독립적이고 결단력 있는 성격으로, 복잡한 문제를 해결하는 데 뛰어난 능력을 가지고 있습니다. 미래를 내다보는 통찰력이 뛰어나며, 자신만의 독특한 관점으로 세상을 바라봅니다. 완벽주의적 성향이 강하고, 깊이 있는 사고를 통해 혁신적인 아이디어를 만들어냅니다.',
           traits: ['체계적 사고', '독립적 성향', '미래 지향적', '분석적', '완벽주의'],
@@ -161,7 +161,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['감정적 소통 방법 배우기', '유연성 기르기', '팀워크 능력 개발', '스트레스 관리법 찾기', '다양한 관점 수용하기']
         },
         'INTP': {
-          title: '논리술사 (INTP)',
+          title: '논리술사',
           description: '논리적이고 분석적인 사고를 가진 철학자입니다.',
           detailedDescription: '당신은 호기심이 매우 강하고 지적 탐구를 즐기는 성격입니다. 복잡한 이론과 개념을 이해하고 분석하는 것을 좋아하며, 독창적인 아이디어를 만들어내는 능력이 뛰어납니다. 자유로운 사고를 중시하고, 논리적 일관성을 매우 중요하게 생각합니다.',
           traits: ['논리적 사고', '호기심 많음', '독창적', '유연한 사고', '내향적'],
@@ -174,7 +174,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['실행력 기르기', '감정 표현 연습하기', '시간 관리 개선', '사회적 교류 늘리기', '아이디어 구체화하기']
         },
         'ENTJ': {
-          title: '통솔자 (ENTJ)',
+          title: '통솔자',
           description: '대담하고 상상력이 풍부한 강한 의지의 소유자입니다.',
           detailedDescription: '당신은 타고난 리더로서 목표를 향해 나아가는 추진력이 강합니다. 효율성을 중시하고 조직을 이끄는 능력이 뛰어나며, 도전적인 과제를 해결하는 것을 즐깁니다. 미래에 대한 명확한 비전을 가지고 있으며, 이를 실현하기 위해 끈질기게 노력합니다.',
           traits: ['리더십', '결단력', '목표 지향적', '효율성 추구', '도전적'],
@@ -187,7 +187,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['감정적 소통 기술 개발', '인내심 기르기', '스트레스 관리', '팀원 배려하기', '유연성 늘리기']
         },
         'ENTP': {
-          title: '변론가 (ENTP)',
+          title: '변론가',
           description: '지적이고 호기심이 많은 사상가입니다.',
           detailedDescription: '당신은 새로운 아이디어와 가능성을 탐구하는 것을 좋아하는 혁신가입니다. 토론과 논쟁을 즐기며, 기존의 틀을 깨는 창의적인 해결책을 찾아냅니다. 에너지가 넘치고 사교적이며, 다양한 분야에 관심을 가지고 있습니다.',
           traits: ['혁신적 사고', '토론 좋아함', '에너지 넘침', '적응력', '사교적'],
@@ -200,7 +200,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['집중력 향상시키기', '계획 세우는 습관 기르기', '감정적 공감 능력 기르기', '지속성 개발하기', '루틴 만들어 지키기']
         },
         'INFJ': {
-          title: '옹호자 (INFJ)',
+          title: '옹호자',
           description: '선의를 가지고 남을 도우며 목적 의식이 뚜렷한 이상주의자입니다.',
           detailedDescription: '당신은 깊은 통찰력과 공감 능력을 가진 희귀한 성격입니다. 다른 사람의 감정을 잘 이해하고, 의미 있는 관계를 추구합니다. 이상주의적이면서도 실용적인 해결책을 찾는 능력이 있으며, 자신만의 가치관과 신념이 뚜렷합니다.',
           traits: ['직관적', '공감 능력', '이상주의', '신념 강함', '통찰력'],
@@ -213,7 +213,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['현실적 목표 설정하기', '스트레스 관리법 배우기', '경계선 설정하기', '자기 돌봄 실천하기', '완벽주의 완화하기']
         },
         'INFP': {
-          title: '중재자 (INFP)',
+          title: '중재자',
           description: '항상 선을 행할 준비가 되어 있는 이타적인 이상주의자입니다.',
           detailedDescription: '당신은 따뜻하고 친절한 마음을 가진 사람으로, 자신의 가치관에 따라 살아가는 것을 중시합니다. 창의적이고 개방적인 마음을 가지고 있으며, 다른 사람의 잠재력을 끌어내는 것을 좋아합니다. 조화로운 환경을 추구하고, 갈등을 피하려는 경향이 있습니다.',
           traits: ['가치 중심적', '창의적', '온화함', '유연성', '이상주의'],
@@ -226,7 +226,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['갈등 해결 기술 배우기', '결정력 기르기', '자신감 향상시키기', '현실적 계획 세우기', '스트레스 관리하기']
         },
         'ENFJ': {
-          title: '주인공 (ENFJ)',
+          title: '주인공',
           description: '카리스마 넘치고 영감을 주는 지도자입니다.',
           detailedDescription: '당신은 다른 사람들을 이끌고 영감을 주는 천성적인 리더입니다. 사람들의 잠재력을 보고 그것을 끌어내는 능력이 뛰어나며, 팀의 화합과 성장을 위해 노력합니다. 카리스마가 있고 의사소통 능력이 뛰어나며, 다른 사람들의 성공을 위해 헌신합니다.',
           traits: ['카리스마', '공감 능력', '의사소통', '영감 제공', '헌신적'],
@@ -239,7 +239,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['개인 시간 확보하기', '경계선 설정하기', '자기 돌봄 실천하기', '비판 수용하기', '스트레스 관리하기']
         },
         'ENFP': {
-          title: '활동가 (ENFP)',
+          title: '활동가',
           description: '열정적이고 창의적인 자유로운 영혼입니다.',
           detailedDescription: '당신은 무한한 가능성을 보는 열정적인 사람입니다. 새로운 아이디어와 경험을 추구하며, 다른 사람들과의 깊은 연결을 중시합니다. 창의적이고 즉흥적이며, 일상의 루틴보다는 새로운 도전을 선호합니다. 사람들에게 영감을 주고 동기를 부여하는 능력이 뛰어납니다.',
           traits: ['열정적', '창의적', '사교적', '영감 제공', '자유로움'],
@@ -252,7 +252,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['집중력 향상시키기', '계획 세우는 습관 기르기', '감정 관리하기', '약속 지키기', '루틴 만들어 따르기']
         },
         'ISTJ': {
-          title: '물류사 (ISTJ)',
+          title: '물류사',
           description: '사실에 근거하여 실용적으로 행동하는 신뢰할 수 있는 현실주의자입니다.',
           detailedDescription: '당신은 책임감이 강하고 성실한 성격으로, 전통과 질서를 중시합니다. 체계적이고 꼼꼼하게 일을 처리하며, 약속을 반드시 지키는 신뢰할 수 있는 사람입니다. 안정성을 추구하고, 검증된 방법을 선호하며, 장기적인 관점에서 계획을 세웁니다.',
           traits: ['책임감', '성실함', '체계적', '신뢰성', '보수적'],
@@ -265,7 +265,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['유연성 기르기', '새로운 경험 시도하기', '감정 표현 연습하기', '스트레스 관리하기', '창의적 활동 해보기']
         },
         'ISFJ': {
-          title: '수호자 (ISFJ)',
+          title: '수호자',
           description: '따뜻하고 선의를 베푸는 수호자입니다.',
           detailedDescription: '당신은 다른 사람을 돌보고 보호하는 것을 좋아하는 온화한 성격입니다. 세심하고 배려심이 깊으며, 다른 사람의 필요를 먼저 생각합니다. 전통적인 가치를 소중히 여기고, 조화로운 관계를 유지하기 위해 노력합니다. 겸손하고 헌신적인 태도로 주변 사람들에게 안정감을 제공합니다.',
           traits: ['배려심', '온화함', '헌신적', '겸손함', '신중함'],
@@ -278,7 +278,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['자기주장 기르기', '경계선 설정하기', '자기 돌봄 실천하기', '갈등 해결 기술 배우기', '새로운 도전하기']
         },
         'ESTJ': {
-          title: '경영자 (ESTJ)',
+          title: '경영자',
           description: '뛰어난 관리 능력을 가진 성실하고 헌신적인 지도자입니다.',
           detailedDescription: '당신은 조직을 효율적으로 관리하고 목표를 달성하는 데 뛰어난 능력을 가진 리더입니다. 전통과 질서를 중시하며, 규칙과 절차를 따르는 것을 중요하게 생각합니다. 실용적이고 현실적인 접근을 선호하며, 팀의 성과를 위해 체계적으로 일을 추진합니다.',
           traits: ['조직력', '실용적', '체계적', '책임감', '현실적'],
@@ -291,7 +291,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['유연성 기르기', '감정적 소통 개선하기', '변화 수용하기', '스트레스 관리하기', '팀원 개별성 인정하기']
         },
         'ESFJ': {
-          title: '집정관 (ESFJ)',
+          title: '집정관',
           description: '사교적이고 인기가 많으며 배려심이 넘치는 성격입니다.',
           detailedDescription: '당신은 다른 사람들과 조화롭게 지내는 것을 중시하는 사교적인 성격입니다. 타인의 감정을 잘 이해하고 배려하며, 모든 사람이 행복하고 편안하게 느낄 수 있도록 노력합니다. 전통적인 가치를 소중히 여기고, 안정적인 관계를 유지하는 데 뛰어난 능력을 가지고 있습니다.',
           traits: ['사교적', '배려심', '협력적', '전통적', '온화함'],
@@ -304,7 +304,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['자기주장 기르기', '비판 수용력 향상시키기', '개인 시간 확보하기', '갈등 해결 기술 배우기', '변화 적응력 기르기']
         },
         'ISTP': {
-          title: '만능재주꾼 (ISTP)',
+          title: '만능재주꾼',
           description: '대담하고 실용적인 사고를 하는 탐험가입니다.',
           detailedDescription: '당신은 실용적이고 논리적인 사고를 가진 독립적인 성격입니다. 손으로 직접 만들고 경험하는 것을 좋아하며, 문제가 생겼을 때 창의적이고 효율적인 해결책을 찾아냅니다. 자유롭고 유연한 환경을 선호하며, 필요할 때만 행동하는 경향이 있습니다.',
           traits: ['실용적', '독립적', '논리적', '유연함', '현실적'],
@@ -317,7 +317,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['감정 표현 연습하기', '장기 계획 세우기', '의사소통 개선하기', '사회적 관계 늘리기', '팀워크 기술 배우기']
         },
         'ISFP': {
-          title: '모험가 (ISFP)',
+          title: '모험가',
           description: '유연하고 매력적인 예술가 기질의 탐험가입니다.',
           detailedDescription: '당신은 따뜻하고 친근한 성격으로, 자신만의 가치관과 신념을 가지고 살아가는 사람입니다. 예술적 감각이 뛰어나고 아름다운 것을 추구하며, 개인의 자유와 독립성을 소중히 여깁니다. 조용하지만 내면이 풍부하고, 다른 사람들의 감정을 잘 이해합니다.',
           traits: ['예술적', '온화함', '유연성', '개성적', '감수성'],
@@ -330,7 +330,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['자기주장 기르기', '계획 세우는 습관 만들기', '자신감 향상시키기', '비판 수용력 기르기', '목표 설정하기']
         },
         'ESFP': {
-          title: '연예인 (ESFP)',
+          title: '연예인',
           description: '자유로운 영혼으로 삶을 사랑하는 활동가입니다.',
           detailedDescription: '당신은 에너지가 넘치고 사교적인 성격으로, 사람들과 함께 있을 때 가장 행복합니다. 순간을 즐기는 것을 좋아하고, 자연스럽고 진정성 있는 모습으로 다른 사람들에게 기쁨을 줍니다. 감정 표현이 풍부하고, 새로운 경험과 모험을 추구합니다.',
           traits: ['활발함', '사교적', '즉흥적', '낙천적', '감정적'],
@@ -343,7 +343,7 @@ export const quizzes: Quiz[] = [
           recommendations: ['계획 세우는 습관 기르기', '집중력 향상시키기', '장기적 목표 설정하기', '감정 관리하기', '비판 수용력 기르기']
         },
         'ESTP': {
-          title: '사업가 (ESTP)',
+          title: '사업가',
           description: '똑똑하고 에너지 넘치며 인기가 많은 활동가입니다.',
           detailedDescription: '당신은 현실적이고 실용적인 접근을 선호하는 행동파입니다. 새로운 도전과 모험을 즐기며, 위기 상황에서도 냉정하게 대처하는 능력이 뛰어납니다. 사교적이고 설득력이 있어 사람들과 쉽게 어울리며, 즉석에서 문제를 해결하는 능력이 탁월합니다.',
           traits: ['행동력', '현실적', '사교적', '적응력', '설득력'],
@@ -375,7 +375,7 @@ export const quizzes: Quiz[] = [
   {
     id: 'love-style',
     title: '연애 스타일 분석',
-    description: '당신의 연애 스타일을 알아보세요',
+    description: '로맨틱한가요? 안정적인가요? 당신만의 연애 패턴을 발견해보세요',
     category: '연애',
     duration: '2분',
     questionCount: 20,
@@ -662,8 +662,8 @@ export const quizzes: Quiz[] = [
   },
   {
     id: 'workplace-character',
-    title: '직장 캐릭터 분석',
-    description: '직장에서 당신은 어떤 캐릭터인가요?',
+    title: '직장 스타일 테스트',
+    description: '리더인가요? 팔로워인가요? 당신의 직장에서의 진짜 모습을 발견해보세요',
     category: '직장',
     duration: '1분 30초',
     questionCount: 18,
@@ -931,7 +931,7 @@ export const quizzes: Quiz[] = [
   {
     id: 'stress-relief',
     title: '스트레스 해소 유형',
-    description: '당신만의 스트레스 해소법을 찾아보세요',
+    description: '활동적으로? 조용히? 당신만의 완벽한 힐링 방법을 찾아보세요',
     category: '심리',
     duration: '1분 30초',
     questionCount: 16,
@@ -1185,7 +1185,7 @@ export const quizzes: Quiz[] = [
   {
     id: 'shopping-style',
     title: '쇼핑 성향 분석',
-    description: '당신의 쇼핑 스타일을 알아보세요',
+    description: '계획적으로? 감성적으로? 당신의 쇼핑 DNA를 발견해보세요',
     category: '라이프스타일',
     duration: '1분',
     questionCount: 10,
@@ -1346,7 +1346,7 @@ export const quizzes: Quiz[] = [
   {
     id: 'travel-style',
     title: '여행 스타일 분석',
-    description: '당신의 여행 스타일을 알아보세요',
+    description: '계획형? 즉흥형? 당신만의 완벽한 여행 방식을 찾아보세요',
     category: '여행',
     duration: '1분',
     questionCount: 10,
@@ -1508,7 +1508,7 @@ export const quizzes: Quiz[] = [
   {
     id: 'food-personality',
     title: '음식 취향으로 보는 성격',
-    description: '당신의 음식 취향으로 성격을 분석해보세요',
+    description: '도전적인가요? 보수적인가요? 당신의 음식 취향이 말해주는 성격을 발견해보세요',
     category: '음식',
     duration: '1분',
     questionCount: 10,
@@ -1668,7 +1668,7 @@ export const quizzes: Quiz[] = [
   {
     id: 'sns-pattern',
     title: 'SNS 사용 패턴 분석',
-    description: 'SNS 사용 습관으로 당신의 성격을 알아보세요',
+    description: '적극적으로? 조용히? 당신의 SNS 사용법이 말해주는 성격을 발견해보세요',
     category: 'SNS',
     duration: '1분',
     questionCount: 10,
@@ -1829,7 +1829,7 @@ export const quizzes: Quiz[] = [
   {
     id: 'movie-taste',
     title: '영화 취향으로 보는 성격',
-    description: '당신의 영화 취향으로 성격을 분석해보세요',
+    description: '액션? 로맨스? 당신의 영화 취향이 말해주는 성격을 발견해보세요',
     category: '영화',
     duration: '1분',
     questionCount: 10,
@@ -1990,7 +1990,7 @@ export const quizzes: Quiz[] = [
   {
     id: 'time-management',
     title: '시간 관리 스타일',
-    description: '당신의 시간 관리 방식을 알아보세요',
+    description: '계획적으로? 유연하게? 당신만의 완벽한 시간 관리법을 찾아보세요',
     category: '라이프스타일',
     duration: '1분',
     questionCount: 10,

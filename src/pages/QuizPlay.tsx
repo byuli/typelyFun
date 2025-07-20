@@ -40,7 +40,9 @@ const QuizPlay = () => {
   }
 
   const currentQuestion = quiz.questions[quizState.currentQuestionIndex];
-  const progress = ((quizState.currentQuestionIndex + 1) / quiz.questions.length) * 100;
+  // 답변한 질문 수를 기준으로 프로그레스 계산
+  const answeredQuestions = quizState.answers.length;
+  const progress = (answeredQuestions / quiz.questions.length) * 100;
   const isLastQuestion = quizState.currentQuestionIndex === quiz.questions.length - 1;
 
   const handleAnswerSelect = (answer: number | string) => {
@@ -114,7 +116,7 @@ const QuizPlay = () => {
       <div className="mb-8">
         <div className="flex justify-between items-center mb-2">
           <span className="text-sm text-gray-600">
-            질문 {quizState.currentQuestionIndex + 1} / {quiz.questions.length}
+            답변 완료 {answeredQuestions} / {quiz.questions.length}
           </span>
           <span className="text-sm font-medium text-gray-900">
             {Math.round(progress)}%
