@@ -1,6 +1,8 @@
 import type { Quiz } from '../types';
+import { newQuizzes } from './new-quizzes';
 
 export const quizzes: Quiz[] = [
+  ...newQuizzes,
   {
     id: 'personality-type',
     title: '성격 유형 테스트',
@@ -2143,6 +2145,134 @@ export const quizzes: Quiz[] = [
           goodMatchReasons: ['모든 시간 관리 스타일과 조화 가능: 서로의 유연한 접근을 이해하며 조화로운 시간 관리를 함께 할 수 있습니다'],
           badMatchReasons: ['극단적인 시간 관리 성향의 사람: 너무 강한 성향으로 인해 균형이 깨질 수 있습니다'],
           recommendations: ['자신만의 시간 관리 철학 정립하기', '일관된 방법 찾기', '전문 분야 개발하기', '명확한 목표 설정하기', '개성 있는 스타일 만들기']
+        };
+      }
+    }
+  },
+  {
+    id: 'communication-style',
+    title: '소통 스타일 테스트',
+    description: '직설적? 우회적? 당신만의 완벽한 소통 방식을 발견해보세요',
+    category: '소통',
+    duration: '1분',
+    questionCount: 10,
+    questions: [
+      {
+        question: '의견이 다를 때 당신은?',
+        options: [
+          { text: '직접적으로 말한다', value: 'direct' },
+          { text: '부드럽게 우회해서 표현한다', value: 'indirect' }
+        ]
+      },
+      {
+        question: '칭찬을 받으면?',
+        options: [
+          { text: '고맙다고 바로 받아들인다', value: 'accept' },
+          { text: '부끄러워하며 겸손하게 거절한다', value: 'modest' }
+        ]
+      },
+      {
+        question: '화가 났을 때?',
+        options: [
+          { text: '즉시 표현한다', value: 'express' },
+          { text: '시간을 두고 차분해진 후 말한다', value: 'calm' }
+        ]
+      },
+      {
+        question: '설명할 때 선호하는 방식은?',
+        options: [
+          { text: '핵심부터 간단명료하게', value: 'concise' },
+          { text: '배경부터 차근차근 자세히', value: 'detailed' }
+        ]
+      },
+      {
+        question: '대화 중 상대방이 말을 끊으면?',
+        options: [
+          { text: '끝까지 들어달라고 요청한다', value: 'assertive' },
+          { text: '조용히 기다린다', value: 'patient' }
+        ]
+      },
+      {
+        question: '모르는 것이 있을 때?',
+        options: [
+          { text: '바로 질문한다', value: 'ask' },
+          { text: '혼자 찾아보고 나서 질문한다', value: 'research' }
+        ]
+      },
+      {
+        question: '상대방의 실수를 지적할 때?',
+        options: [
+          { text: '바로 정정한다', value: 'correct' },
+          { text: '나중에 개인적으로 말한다', value: 'private' }
+        ]
+      },
+      {
+        question: '감정을 표현할 때?',
+        options: [
+          { text: '얼굴에 바로 드러난다', value: 'open' },
+          { text: '속으로만 간직한다', value: 'reserved' }
+        ]
+      },
+      {
+        question: '의사결정을 할 때?',
+        options: [
+          { text: '빠르게 결정한다', value: 'quick' },
+          { text: '충분히 고민한 후 결정한다', value: 'thoughtful' }
+        ]
+      },
+      {
+        question: '갈등 상황에서?',
+        options: [
+          { text: '직접 대화로 해결한다', value: 'confront' },
+          { text: '중재자를 통해 해결한다', value: 'mediate' }
+        ]
+      }
+    ],
+    resultMapping: (answers) => {
+      const directCount = answers.filter(a => ['direct', 'accept', 'express', 'concise', 'assertive', 'ask', 'correct', 'open', 'quick', 'confront'].includes(a as string)).length;
+      const indirectCount = answers.filter(a => ['indirect', 'modest', 'calm', 'detailed', 'patient', 'research', 'private', 'reserved', 'thoughtful', 'mediate'].includes(a as string)).length;
+
+      if (directCount >= 6) {
+        return {
+          title: '직설적 소통가 💬',
+          description: '솔직하고 명확한 소통을 선호하는 당신! 효율적이고 직접적인 대화로 빠른 결과를 만들어냅니다.',
+          detailedDescription: '당신은 솔직하고 명확한 소통을 선호하는 직설적인 성격입니다. 핵심을 바로 말하고, 감정을 숨기지 않으며, 빠른 의사결정을 추구합니다. 갈등 상황에서도 직접적인 대화로 해결하려고 하며, 상대방의 기분보다는 진실과 효율성을 중시합니다.',
+          traits: ['솔직함', '직설적', '효율적', '명확함', '결단력'],
+          strengths: ['빠른 소통', '명확한 의사전달', '효율적 문제해결', '솔직한 피드백', '결단력'],
+          weaknesses: ['감정적 둔감', '상대방 기분 고려 부족', '갈등 유발 가능', '성급한 판단', '우회적 표현 부족'],
+          goodMatches: ['공감적 소통가', '균형잡힌 소통가'],
+          badMatches: ['우회적 소통가', '조용한 소통가'],
+          goodMatchReasons: ['공감적 소통가: 당신의 직설성을 부드럽게 조절해주며 효과적인 소통을 도와줍니다', '균형잡힌 소통가: 상황에 맞는 적절한 소통 방식을 함께 찾아갈 수 있습니다'],
+          badMatchReasons: ['우회적 소통가: 직접적인 소통 방식이 부담스러워 갈등이 생길 수 있습니다', '조용한 소통가: 너무 직설적인 표현으로 상처를 줄 수 있습니다'],
+          recommendations: ['상대방 감정 고려하기', '부드러운 표현 연습하기', '인내심 기르기', '상황별 소통 방식 조절하기', '공감 능력 개발하기']
+        };
+      } else if (indirectCount >= 6) {
+        return {
+          title: '우회적 소통가 🌸',
+          description: '부드럽고 조화로운 소통을 선호하는 당신! 상대방의 감정을 고려한 따뜻한 대화로 관계를 돈독히 합니다.',
+          detailedDescription: '당신은 상대방의 감정을 고려한 부드럽고 조화로운 소통을 선호하는 사람입니다. 직접적인 표현보다는 우회적이고 예의 바른 방식으로 의사를 전달하며, 갈등을 피하고 조화를 추구합니다. 상대방의 기분을 상하게 하지 않으려고 노력하며, 공감적이고 따뜻한 대화를 중시합니다.',
+          traits: ['부드러움', '공감적', '조화 추구', '예의 바름', '갈등 회피'],
+          strengths: ['상대방 배려', '조화로운 관계', '공감 능력', '갈등 예방', '따뜻한 소통'],
+          weaknesses: ['의사전달 불명확', '갈등 해결 어려움', '우유부단함', '진실 회피', '자기주장 부족'],
+          goodMatches: ['직설적 소통가', '균형잡힌 소통가'],
+          badMatches: ['공감적 소통가', '조용한 소통가'],
+          goodMatchReasons: ['직설적 소통가: 당신의 부드러운 소통을 보완해주며 명확한 의사전달을 도와줍니다', '균형잡힌 소통가: 상황에 맞는 적절한 소통 방식을 함께 찾아갈 수 있습니다'],
+          badMatchReasons: ['공감적 소통가: 너무 우회적인 표현으로 소통이 어려울 수 있습니다', '조용한 소통가: 둘 다 소극적인 소통으로 진전이 어려울 수 있습니다'],
+          recommendations: ['명확한 의사전달 연습하기', '갈등 해결 기술 배우기', '자기주장 기르기', '직설적 표현도 시도하기', '진실 담담하기']
+        };
+      } else {
+        return {
+          title: '균형잡힌 소통가 ⚖️',
+          description: '상황에 맞는 적절한 소통을 하는 당신! 유연하고 지혜로운 대화로 다양한 사람들과 조화를 이룹니다.',
+          detailedDescription: '당신은 상황과 상대방에 따라 적절한 소통 방식을 선택하는 균형잡힌 소통가입니다. 때로는 직설적으로, 때로는 부드럽게 표현할 줄 알며, 상대방의 성격과 상황을 고려한 유연한 소통을 합니다. 갈등 상황에서도 중재자 역할을 잘하며, 다양한 사람들과 조화로운 관계를 유지합니다.',
+          traits: ['유연성', '적응력', '균형감', '지혜', '조화'],
+          strengths: ['상황 적응력', '다양한 소통 방식', '갈등 조정', '관계 조화', '효과적 소통'],
+          weaknesses: ['뚜렷한 개성 부족', '일관성 부족', '우유부단함', '깊이 부족', '전문성 부족'],
+          goodMatches: ['모든 소통 스타일과 조화 가능'],
+          badMatches: ['극단적인 소통 성향의 사람'],
+          goodMatchReasons: ['모든 소통 스타일과 조화 가능: 어떤 소통 방식과도 적절히 조화를 이룰 수 있습니다'],
+          badMatchReasons: ['극단적인 소통 성향의 사람: 한 가지 방식만 고집하는 사람과는 조율이 어려울 수 있습니다'],
+          recommendations: ['자신만의 소통 철학 정립하기', '일관된 스타일 개발하기', '전문 분야 만들기', '깊이 있는 소통 시도하기', '개성 있는 표현 기르기']
         };
       }
     }
