@@ -96,8 +96,22 @@ npm run preview
 ## 🔗 배포
 
 사이트는 Firebase Hosting을 통해 배포됩니다:
-- **URL**: https://TypelyFun.web.app
-- **배포 명령어**: `npm run build && firebase deploy`
+- **URL**: https://typelyfun.web.app
+- **자동 배포**: GitHub main 브랜치에 푸시하면 자동으로 배포됩니다
+- **수동 배포**: `npm run build && firebase deploy`
+
+### 자동 배포 설정
+
+이 프로젝트는 GitHub Actions를 통해 자동 배포가 설정되어 있습니다:
+
+1. **main 브랜치 푸시**: 자동으로 프로덕션에 배포
+2. **Pull Request**: 미리보기 배포 생성
+3. **배포 상태**: GitHub Actions 탭에서 확인 가능
+
+### 배포 워크플로우
+
+- `.github/workflows/firebase-hosting-merge.yml`: main 브랜치 병합 시 배포
+- `.github/workflows/firebase-hosting-pull-request.yml`: PR 시 미리보기 배포
 
 ## 🤝 기여하기
 
