@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { quizzes } from '../data/quizzes';
-import { Clock, Users, TrendingUp, Heart, Zap, Target, ArrowRight, Play, CheckCircle, Shuffle } from 'lucide-react';
+import { Clock, Users, TrendingUp, Heart, Target, ArrowRight, Play, CheckCircle, Shuffle } from 'lucide-react';
 
 const Home = () => {
   // 인기 퀴즈 (상위 3개)
@@ -19,7 +19,7 @@ const Home = () => {
         <div className="space-y-6">
           <div className="flex justify-center">
             <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary-100 text-primary-700 text-sm font-medium border border-primary-200">
-              <Zap className="h-4 w-4 mr-2" />
+              <CheckCircle className="h-4 w-4 mr-2" />
               재미있는 성향 테스트
             </div>
           </div>
@@ -153,7 +153,7 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="text-center p-6 bg-white border border-gray-200 rounded-lg">
             <div className="mx-auto w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4 border border-primary-200">
-              <Zap className="h-6 w-6 text-primary-600" />
+              <CheckCircle className="h-6 w-6 text-primary-600" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">재미있는 분석</h3>
             <p className="text-gray-600 text-sm">쉽고 재미있는 질문으로 당신의 성향을 정확하게 파악</p>

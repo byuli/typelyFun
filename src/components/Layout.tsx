@@ -1,6 +1,5 @@
 import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { Zap } from 'lucide-react';
 
 interface LayoutProps {
   children: ReactNode;
@@ -14,10 +13,13 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link to="/" className="flex items-center space-x-3">
-              <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                <Zap className="h-5 w-5 text-white" />
+              <div className="w-8 h-8">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" className="w-full h-full">
+                  <circle cx="16" cy="16" r="14" fill="#3B82F6" stroke="#1E40AF" strokeWidth="2"/>
+                  <path d="M10 16l4 4 8-8" stroke="white" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
               </div>
-              <span className="text-xl font-semibold text-gray-900">TypelyFun</span>
+              <span className="text-xl font-semibold text-gray-900">typely fun</span>
             </Link>
           </div>
         </div>
