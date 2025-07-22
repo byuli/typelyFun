@@ -4,12 +4,12 @@ export const personalityTypeQuiz: Quiz = {
   id: 'personality-type',
   title: '🧭 당신은 어떤 성격인가요?',
   description:
-    '16가지 성격 유형으로 당신을 발견해보세요! 외향적인가요? 내향적인가요? 어떤 성격과 가장 닮았을까요?',
+    '16가지 독특한 성격 유형으로 당신을 발견해보세요! 어떤 동물이나 자연물과 가장 닮았을까요?',
   category: '성격',
   duration: '1분 30초',
   questionCount: 16,
   questions: [
-    // E/I 측정 질문들 (4개)
+    // 외향성/내향성 측정 질문들 (4개)
     {
       question: '새로운 사람들과 만날 때 당신은?',
       options: [
@@ -39,7 +39,7 @@ export const personalityTypeQuiz: Quiz = {
       ],
     },
 
-    // S/N 측정 질문들 (4개)
+    // 현실성/직관성 측정 질문들 (4개)
     {
       question: '정보를 처리할 때 당신은?',
       options: [
@@ -69,7 +69,7 @@ export const personalityTypeQuiz: Quiz = {
       ],
     },
 
-    // T/F 측정 질문들 (4개)
+    // 논리성/감정성 측정 질문들 (4개)
     {
       question: '결정을 내릴 때 당신은?',
       options: [
@@ -99,7 +99,7 @@ export const personalityTypeQuiz: Quiz = {
       ],
     },
 
-    // J/P 측정 질문들 (4개)
+    // 계획성/즉흥성 측정 질문들 (4개)
     {
       question: '일상 생활에서 당신은?',
       options: [
@@ -130,7 +130,7 @@ export const personalityTypeQuiz: Quiz = {
     },
   ],
   resultMapping: (answers) => {
-    // MBTI 점수 계산
+    // 성격 유형 점수 계산
     const eCount = answers.filter(a => a === 'E').length;
     const iCount = answers.filter(a => a === 'I').length;
     const sCount = answers.filter(a => a === 'S').length;
@@ -148,18 +148,18 @@ export const personalityTypeQuiz: Quiz = {
 
     const results = {
       ENTJ: {
-        title: '👑 황제 같은 천연 리더',
-        description: '당신은 황제처럼 카리스마 있고 결단력 있는 천연 지도자입니다!',
-        detailedDescription: `당신은 황제처럼 강력하고 카리스마 있는 성격을 가지고 있어요. 목표를 설정하고 그것을 달성하기 위해 체계적으로 계획을 세우며, 다른 사람들을 이끄는 것을 자연스럽게 잘하는 천연 리더입니다.
+        title: '👑 사자 같은 천연 리더',
+        description: '당신은 사자처럼 카리스마 있고 결단력 있는 천연 지도자입니다!',
+        detailedDescription: `당신은 사자처럼 강력하고 카리스마 있는 성격을 가지고 있어요. 목표를 설정하고 그것을 달성하기 위해 체계적으로 계획을 세우며, 다른 사람들을 이끄는 것을 자연스럽게 잘하는 천연 리더입니다.
 
-황제처럼 논리적이고 효율적인 결정을 내리며, 장기적인 비전을 가지고 조직을 이끌어나가요. 도전적인 목표를 설정하고 그것을 달성하는 과정에서 큰 만족감을 느끼는 성격이에요.
+사자처럼 논리적이고 효율적인 결정을 내리며, 장기적인 비전을 가지고 조직을 이끌어나가요. 도전적인 목표를 설정하고 그것을 달성하는 과정에서 큰 만족감을 느끼는 성격이에요.
 
-하지만 황제도 때로는 너무 강압적일 수 있듯이, 당신도 가끔은 다른 사람의 감정을 놓치거나 너무 결과 중심적일 수 있어요. 가끔은 황제도 마음(감정)을 열어보는 것이 좋을 것 같아요!`,
+하지만 사자도 때로는 너무 강압적일 수 있듯이, 당신도 가끔은 다른 사람의 감정을 놓치거나 너무 결과 중심적일 수 있어요. 가끔은 사자도 마음(감정)을 열어보는 것이 좋을 것 같아요!`,
         traits: ['리더십', '결단력', '논리적', '목표지향', '효율성'],
         strengths: ['강력한 리더십', '전략적 사고', '목표 달성 능력', '의사결정력', '조직 관리'],
         weaknesses: ['감정 소홀', '완고함', '압박감 조성', '세부사항 놓침', '비판적'],
-        goodMatches: ['INFP', 'ENFP', 'INTJ'],
-        badMatches: ['ISFP', 'ESFP'],
+        goodMatches: ['유니콘 같은 꿈꾸는 이상가', '나비 같은 자유로운 영혼', '성 속의 지략가'],
+        badMatches: ['들꽃 같은 순수한 예술가', '무대 위의 자유로운 연예인'],
         recommendations: ['다른 사람의 감정도 고려해보세요', '완벽주의를 조금 줄여보세요', '팀원들의 의견도 들어보세요', '휴식도 취해보세요']
       },
       ENFJ: {
@@ -173,8 +173,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['영감적', '공감능력', '조화추구', '성장지향', '따뜻함'],
         strengths: ['뛰어난 소통력', '팀 빌딩', '동기부여', '갈등 조정', '멘토링'],
         weaknesses: ['자기희생', '과도한 책임감', '비판 민감', '완벽주의', '번아웃'],
-        goodMatches: ['INFP', 'ENFP', 'INTJ'],
-        badMatches: ['ISTP', 'ESTP'],
+        goodMatches: ['유니콘 같은 꿈꾸는 이상가', '나비 같은 자유로운 영혼', '성 속의 지략가'],
+        badMatches: ['공작실의 조용한 장인', '파도타기의 모험가'],
         recommendations: ['자기 자신도 돌보세요', '완벽하지 않아도 괜찮아요', '비판을 너무 개인적으로 받아들이지 마세요', '경계선을 설정해보세요']
       },
       ENFP: {
@@ -188,8 +188,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['창의적', '열정적', '자유로움', '영감적', '사교적'],
         strengths: ['창의적 사고', '동기부여', '적응력', '네트워킹', '긍정적 에너지'],
         weaknesses: ['집중력 부족', '계획성 부족', '루틴 어려움', '감정 기복', '과도한 약속'],
-        goodMatches: ['INTJ', 'INFJ', 'ENTJ'],
-        badMatches: ['ISTJ', 'ESTJ'],
+        goodMatches: ['성 속의 지략가', '달빛 같은 신비로운 상담가', '사자 같은 천연 리더'],
+        badMatches: ['도서관 같은 신뢰할 수 있는 관리자', '건물 같은 든든한 관리자'],
         recommendations: ['한 번에 하나씩 집중해보세요', '계획을 세우는 습관을 들이세요', '감정을 조절하는 방법을 배워보세요', '현실적인 목표를 설정해보세요']
       },
       ENTP: {
@@ -203,8 +203,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['혁신적', '논리적', '창의적', '도전적', '다재다능'],
         strengths: ['창의적 문제해결', '논리적 분석', '유연한 사고', '설득력', '학습능력'],
         weaknesses: ['세부사항 소홀', '루틴 회피', '감정 표현 어려움', '완료 어려움', '지루함'],
-        goodMatches: ['INFJ', 'INTJ', 'ENFJ'],
-        badMatches: ['ISFJ', 'ESFJ'],
+        goodMatches: ['달빛 같은 신비로운 상담가', '성 속의 지략가', '태양 같은 영감 리더'],
+        badMatches: ['따뜻한 집 같은 보호자', '벚꽃 같은 따뜻한 보호자'],
         recommendations: ['세부사항에도 신경써보세요', '감정 표현도 연습해보세요', '프로젝트를 완료하는 습관을 들이세요', '루틴의 중요성을 인정해보세요']
       },
       ESTJ: {
@@ -218,8 +218,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['체계적', '책임감', '현실적', '효율적', '전통적'],
         strengths: ['조직 관리', '목표 달성', '실행력', '안정성', '리더십'],
         weaknesses: ['경직성', '감정 소홀', '변화 저항', '창의성 부족', '압박감'],
-        goodMatches: ['ISFP', 'INFP', 'ESFP'],
-        badMatches: ['ENFP', 'ENTP'],
+        goodMatches: ['들꽃 같은 순수한 예술가', '유니콘 같은 꿈꾸는 이상가', '무대 위의 자유로운 연예인'],
+        badMatches: ['나비 같은 자유로운 영혼', '로켓 같은 혁신가'],
         recommendations: ['유연성을 기르세요', '다른 사람의 감정도 고려해보세요', '변화를 두려워하지 마세요', '창의적 접근도 시도해보세요']
       },
       ESFJ: {
@@ -233,8 +233,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['따뜻함', '배려심', '협력적', '책임감', '전통적'],
         strengths: ['인간관계', '팀워크', '서비스 정신', '조화 추구', '실행력'],
         weaknesses: ['비판 민감', '자기희생', '변화 저항', '갈등 회피', '개인적 어려움'],
-        goodMatches: ['ISFP', 'INFP', 'ESTP'],
-        badMatches: ['ENTP', 'INTP'],
+        goodMatches: ['들꽃 같은 순수한 예술가', '유니콘 같은 꿈꾸는 이상가', '파도타기의 모험가'],
+        badMatches: ['로켓 같은 혁신가', '연구실의 천재 과학자'],
         recommendations: ['자기 자신도 돌보세요', '비판을 건설적으로 받아들이세요', '변화에 열린 마음을 가져보세요', '갈등을 피하지 마세요']
       },
       ESFP: {
@@ -248,8 +248,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['활발함', '사교적', '현실적', '유연함', '즐거움'],
         strengths: ['분위기 메이킹', '적응력', '실용적 해결', '인간관계', '긍정적 에너지'],
         weaknesses: ['계획성 부족', '집중력 부족', '미래 계획 어려움', '비판 민감', '충동적'],
-        goodMatches: ['ISTJ', 'ISFJ', 'ESTJ'],
-        badMatches: ['INTJ', 'INFJ'],
+        goodMatches: ['도서관 같은 신뢰할 수 있는 관리자', '따뜻한 집 같은 보호자', '건물 같은 든든한 관리자'],
+        badMatches: ['성 속의 지략가', '달빛 같은 신비로운 상담가'],
         recommendations: ['장기적인 계획도 세워보세요', '집중력을 기르는 연습을 해보세요', '비판을 성장의 기회로 보세요', '충동적인 결정을 줄여보세요']
       },
       ESTP: {
@@ -263,8 +263,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['모험적', '현실적', '활동적', '사교적', '유연함'],
         strengths: ['빠른 대응', '실행력', '위기 관리', '적응력', '에너지'],
         weaknesses: ['충동성', '계획성 부족', '집중력 부족', '미래 계획 어려움', '감정 표현 어려움'],
-        goodMatches: ['ISFJ', 'ISTJ', 'ESFJ'],
-        badMatches: ['INFJ', 'INTJ'],
+        goodMatches: ['따뜻한 집 같은 보호자', '도서관 같은 신뢰할 수 있는 관리자', '벚꽃 같은 따뜻한 보호자'],
+        badMatches: ['달빛 같은 신비로운 상담가', '성 속의 지략가'],
         recommendations: ['장기적인 관점도 가져보세요', '충동적인 결정을 줄여보세요', '감정을 표현하는 연습을 해보세요', '계획의 중요성을 인식해보세요']
       },
       INTJ: {
@@ -278,8 +278,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['전략적', '독립적', '혁신적', '논리적', '미래지향'],
         strengths: ['전략적 사고', '독립적 판단', '혁신적 아이디어', '체계적 실행', '문제 해결'],
         weaknesses: ['사교성 부족', '감정 표현 어려움', '완벽주의', '비판적', '고집'],
-        goodMatches: ['ENFP', 'ENTP', 'ENTJ'],
-        badMatches: ['ESFP', 'ESTP'],
+        goodMatches: ['나비 같은 자유로운 영혼', '로켓 같은 혁신가', '사자 같은 천연 리더'],
+        badMatches: ['무대 위의 자유로운 연예인', '파도타기의 모험가'],
         recommendations: ['다른 사람과의 소통을 늘려보세요', '감정도 논리만큼 중요하다는 것을 인식해보세요', '완벽주의를 조금 줄여보세요', '다른 관점도 수용해보세요']
       },
       INFJ: {
@@ -293,8 +293,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['통찰력', '이상주의', '공감능력', '창의적', '독립적'],
         strengths: ['깊은 이해력', '미래 비전', '창의적 사고', '상담 능력', '영감 제공'],
         weaknesses: ['완벽주의', '자기희생', '비판 민감', '소수 관계 선호', '번아웃'],
-        goodMatches: ['ENFP', 'ENTP', 'ENTJ'],
-        badMatches: ['ESTP', 'ESFP'],
+        goodMatches: ['나비 같은 자유로운 영혼', '로켓 같은 혁신가', '사자 같은 천연 리더'],
+        badMatches: ['파도타기의 모험가', '무대 위의 자유로운 연예인'],
         recommendations: ['자기 자신도 돌보세요', '완벽하지 않아도 괜찮다는 것을 받아들이세요', '더 많은 사람들과 관계를 맺어보세요', '휴식의 중요성을 인식해보세요']
       },
       INFP: {
@@ -308,8 +308,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['이상주의', '창의적', '개성적', '가치 중심', '유연함'],
         strengths: ['창의적 사고', '깊은 가치관', '개인적 성장', '예술적 감각', '진정성'],
         weaknesses: ['현실성 부족', '우유부단', '비판 민감', '완벽주의', '갈등 회피'],
-        goodMatches: ['ENFJ', 'ENTJ', 'ESTJ'],
-        badMatches: ['ESTJ', 'ENTJ'],
+        goodMatches: ['태양 같은 영감 리더', '사자 같은 천연 리더', '건물 같은 든든한 관리자'],
+        badMatches: ['건물 같은 든든한 관리자', '사자 같은 천연 리더'],
         recommendations: ['현실적인 목표도 설정해보세요', '결정을 미루지 마세요', '비판을 성장의 기회로 보세요', '갈등을 피하지 마세요']
       },
       INTP: {
@@ -323,8 +323,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['논리적', '분석적', '독창적', '호기심', '독립적'],
         strengths: ['논리적 분석', '창의적 문제해결', '이론적 사고', '객관적 판단', '학습능력'],
         weaknesses: ['사교성 부족', '감정 표현 어려움', '실행력 부족', '세부사항 소홀', '완료 어려움'],
-        goodMatches: ['ENFJ', 'ENTJ', 'ESTJ'],
-        badMatches: ['ESFJ', 'ISFJ'],
+        goodMatches: ['태양 같은 영감 리더', '사자 같은 천연 리더', '건물 같은 든든한 관리자'],
+        badMatches: ['벚꽃 같은 따뜻한 보호자', '따뜻한 집 같은 보호자'],
         recommendations: ['사람들과의 소통을 늘려보세요', '감정도 논리만큼 중요하다는 것을 인식해보세요', '아이디어를 실행에 옮겨보세요', '세부사항에도 신경써보세요']
       },
       ISTJ: {
@@ -338,8 +338,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['책임감', '체계적', '신뢰성', '실용적', '전통적'],
         strengths: ['안정성', '체계적 관리', '책임감', '완료 능력', '신뢰성'],
         weaknesses: ['변화 저항', '융통성 부족', '창의성 부족', '감정 표현 어려움', '새로운 시도 회피'],
-        goodMatches: ['ESFP', 'ESTP', 'ENFP'],
-        badMatches: ['ENFP', 'ENTP'],
+        goodMatches: ['무대 위의 자유로운 연예인', '파도타기의 모험가', '나비 같은 자유로운 영혼'],
+        badMatches: ['나비 같은 자유로운 영혼', '로켓 같은 혁신가'],
         recommendations: ['변화를 두려워하지 마세요', '새로운 시도도 해보세요', '감정 표현도 연습해보세요', '융통성을 기르세요']
       },
       ISFJ: {
@@ -353,8 +353,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['배려심', '온화함', '헌신적', '겸손함', '신중함'],
         strengths: ['타인 배려', '세심한 관찰', '안정성 제공', '협력 능력', '신뢰성'],
         weaknesses: ['자기주장 부족', '갈등 회피', '과도한 희생', '스트레스 내재화', '변화 적응 어려움'],
-        goodMatches: ['ESFP', 'ENFP', 'ESTP'],
-        badMatches: ['ENTP', 'INTP'],
+        goodMatches: ['무대 위의 자유로운 연예인', '나비 같은 자유로운 영혼', '파도타기의 모험가'],
+        badMatches: ['로켓 같은 혁신가', '연구실의 천재 과학자'],
         recommendations: ['자기 자신도 돌보세요', '변화에 열린 마음을 가져보세요', '갈등을 피하지 마세요', '자신의 의견도 표현해보세요']
       },
       ISFP: {
@@ -368,8 +368,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['순수함', '예술적', '개성적', '온화함', '유연함'],
         strengths: ['창의적 표현', '공감 능력', '미적 감각', '적응력', '개방적 마음'],
         weaknesses: ['자기주장 부족', '계획성 부족', '비판 민감', '우유부단', '스트레스 민감'],
-        goodMatches: ['ENFJ', 'ESTJ', 'ENTJ'],
-        badMatches: ['ENTJ', 'ESTJ'],
+        goodMatches: ['태양 같은 영감 리더', '건물 같은 든든한 관리자', '사자 같은 천연 리더'],
+        badMatches: ['사자 같은 천연 리더', '건물 같은 든든한 관리자'],
         recommendations: ['자신의 의견을 표현해보세요', '갈등을 피하지 마세요', '계획적으로 행동해보세요', '비판을 성장의 기회로 보세요']
       },
       ISTP: {
@@ -383,8 +383,8 @@ export const personalityTypeQuiz: Quiz = {
         traits: ['실용적', '논리적', '독립적', '차분함', '유연함'],
         strengths: ['문제 해결', '실용적 기술', '독립성', '위기 대응', '기술적 능력'],
         weaknesses: ['소통 부족', '감정 표현 어려움', '장기 계획 어려움', '사교성 부족', '루틴 회피'],
-        goodMatches: ['ESFJ', 'ESTJ', 'ENFJ'],
-        badMatches: ['ENFJ', 'INFJ'],
+        goodMatches: ['벚꽃 같은 따뜻한 보호자', '건물 같은 든든한 관리자', '태양 같은 영감 리더'],
+        badMatches: ['태양 같은 영감 리더', '달빛 같은 신비로운 상담가'],
         recommendations: ['사람들과의 소통을 늘려보세요', '감정 표현도 연습해보세요', '장기적인 계획도 세워보세요', '팀워크의 중요성을 인식해보세요']
       }
     };
