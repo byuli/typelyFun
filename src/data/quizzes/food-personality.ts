@@ -2,7 +2,7 @@ import type { Quiz } from '../../types';
 
 export const foodPersonalityQuiz: Quiz = {
   id: 'food-personality',
-  title: '🍽️ 당신은 어떤 음식인가요?',
+  title: '당신은 어떤 음식인가요?',
   description:
     '음식 취향으로 알아보는 당신의 숨겨진 성격! 어떤 음식과 가장 닮았을까요?',
   category: '라이프스타일',
@@ -13,19 +13,19 @@ export const foodPersonalityQuiz: Quiz = {
       question: '새로운 음식을 발견했을 때 당신의 반응은?',
       options: [
         {
-          text: '🔥 "와! 이거 완전 새로운 맛이야!" (즉시 도전)',
+          text: '"와! 이거 완전 새로운 맛이야!" (즉시 도전)',
           value: 'adventurous',
         },
         {
-          text: '🤔 "음... 영양성분은 어떨까?" (신중하게 분석)',
+          text: '"음... 영양성분은 어떨까?" (신중하게 분석)',
           value: 'analytical',
         },
         {
-          text: '😊 "친구가 추천해줬는데 맛있을까?" (추천 의존)',
+          text: '"친구가 추천해줬는데 맛있을까?" (추천 의존)',
           value: 'social',
         },
         {
-          text: '😌 "역시 내가 좋아하는 메뉴가 최고야" (안전 선호)',
+          text: '"역시 내가 좋아하는 메뉴가 최고야" (안전 선호)',
           value: 'comfort',
         },
       ],
@@ -33,142 +33,142 @@ export const foodPersonalityQuiz: Quiz = {
     {
       question: '음식점에서 메뉴를 고를 때 당신은?',
       options: [
-        { text: '🎯 "오늘은 완전 새로운 걸 시도해보자!"', value: 'explorer' },
+        { text: '"오늘은 완전 새로운 걸 시도해보자!"', value: 'explorer' },
         {
-          text: '📊 "칼로리, 단백질, 비타민... 체크 완료!"',
+          text: '"칼로리, 단백질, 비타민... 체크 완료!"',
           value: 'health-conscious',
         },
-        { text: '👥 "다른 사람들은 뭐 먹고 있지?"', value: 'trend-follower' },
-        { text: '🏠 "역시 집에서 먹는 게 최고야"', value: 'homebody' },
+        { text: '"다른 사람들은 뭐 먹고 있지?"', value: 'trend-follower' },
+        { text: '"역시 집에서 먹는 게 최고야"', value: 'homebody' },
       ],
     },
     {
       question: '음식을 먹을 때 가장 중요한 것은?',
       options: [
-        { text: '💥 강렬하고 독특한 맛의 폭발!', value: 'intense' },
-        { text: '🌱 신선하고 건강한 자연의 맛', value: 'natural' },
-        { text: '🎉 사람들과 함께하는 즐거운 분위기', value: 'social' },
-        { text: '😌 편안하고 익숙한 맛의 안정감', value: 'comfort' },
+        { text: '강렬하고 독특한 맛의 폭발!', value: 'intense' },
+        { text: '신선하고 건강한 자연의 맛', value: 'natural' },
+        { text: '사람들과 함께하는 즐거운 분위기', value: 'social' },
+        { text: '편안하고 익숙한 맛의 안정감', value: 'comfort' },
       ],
     },
     {
       question: '요리할 때 당신의 스타일은?',
       options: [
         {
-          text: '🎨 "레시피? 그런 건 없어! 내 감각이 최고야!"',
+          text: '"레시피? 그런 건 없어! 내 감각이 최고야!"',
           value: 'creative',
         },
-        { text: '⚖️ "정확히 3.5g의 소금, 2분 30초 조리"', value: 'precise' },
+        { text: '"정확히 3.5g의 소금, 2분 30초 조리"', value: 'precise' },
         {
-          text: '👨‍👩‍👧‍👦 "다 같이 요리하는 게 제일 재밌어!"',
+          text: '"다 같이 요리하는 게 제일 재밌어!"',
           value: 'collaborative',
         },
-        { text: '⚡ "5분 만에 끝내는 간단 요리!"', value: 'efficient' },
+        { text: '"5분 만에 끝내는 간단 요리!"', value: 'efficient' },
       ],
     },
     {
       question: '음식에서 가장 싫어하는 것은?',
       options: [
-        { text: '😴 지루하고 단조로운 맛', value: 'boring' },
-        { text: '🤢 건강에 해로운 인공 첨가물', value: 'artificial' },
-        { text: '😔 혼자서 먹는 외로운 식사', value: 'lonely' },
-        { text: '😤 복잡하고 번거로운 요리 과정', value: 'complicated' },
+        { text: '지루하고 단조로운 맛', value: 'boring' },
+        { text: '건강에 해로운 인공 첨가물', value: 'artificial' },
+        { text: '혼자서 먹는 외로운 식사', value: 'lonely' },
+        { text: '복잡하고 번거로운 요리 과정', value: 'complicated' },
       ],
     },
     {
       question: '이상적인 식사 시간은?',
       options: [
-        { text: '🌍 세계 각국의 음식을 탐험하는 시간', value: 'global' },
-        { text: '🧘‍♀️ 건강과 영양을 생각하는 명상 시간', value: 'mindful' },
-        { text: '🎊 가족, 친구들과 떠드는 파티 시간', value: 'party' },
-        { text: '🏡 집에서 편안하게 쉬는 시간', value: 'relaxing' },
+        { text: '세계 각국의 음식을 탐험하는 시간', value: 'global' },
+        { text: '건강과 영양을 생각하는 명상 시간', value: 'mindful' },
+        { text: '가족, 친구들과 떠드는 파티 시간', value: 'party' },
+        { text: '집에서 편안하게 쉬는 시간', value: 'relaxing' },
       ],
     },
     {
       question: '음식 선택에서 당신의 우선순위는?',
       options: [
-        { text: '🚀 새로운 경험과 도전', value: 'experience' },
-        { text: '💪 건강과 영양', value: 'nutrition' },
-        { text: '💕 사람들과의 연결', value: 'connection' },
-        { text: '😌 편안함과 안정감', value: 'stability' },
+        { text: '새로운 경험과 도전', value: 'experience' },
+        { text: '건강과 영양', value: 'nutrition' },
+        { text: '사람들과의 연결', value: 'connection' },
+        { text: '편안함과 안정감', value: 'stability' },
       ],
     },
     {
       question: '음식을 먹을 때 당신의 감정은?',
       options: [
-        { text: '🤩 "와! 이건 완전 새로운 세계야!"', value: 'excited' },
-        { text: '😌 "건강한 식사로 내 몸을 챙기고 있어"', value: 'satisfied' },
-        { text: '😊 "사람들과 함께라서 더 맛있어!"', value: 'happy' },
-        { text: '😌 "편안하고 안정적인 맛이야"', value: 'calm' },
+        { text: '"와! 이건 완전 새로운 세계야!"', value: 'excited' },
+        { text: '"건강한 식사로 내 몸을 챙기고 있어"', value: 'satisfied' },
+        { text: '"사람들과 함께라서 더 맛있어!"', value: 'happy' },
+        { text: '"편안하고 안정적인 맛이야"', value: 'calm' },
       ],
     },
     {
       question: '음식에서 가장 만족스러운 순간은?',
       options: [
-        { text: '💫 예상치 못한 맛의 조합을 발견했을 때', value: 'discovery' },
-        { text: '✅ 건강한 식사를 완료했을 때', value: 'achievement' },
-        { text: '🎉 사람들과 즐거운 식사를 마쳤을 때', value: 'celebration' },
-        { text: '😌 편안하고 만족스러운 식사를 했을 때', value: 'contentment' },
+        { text: '예상치 못한 맛의 조합을 발견했을 때', value: 'discovery' },
+        { text: '건강한 식사를 완료했을 때', value: 'achievement' },
+        { text: '사람들과 즐거운 식사를 마쳤을 때', value: 'celebration' },
+        { text: '편안하고 만족스러운 식사를 했을 때', value: 'contentment' },
       ],
     },
     {
       question: '음식 취향을 한 마디로 표현하면?',
       options: [
-        { text: '🌪️ 모험적이고 도전적인 맛의 탐험가', value: 'adventurer' },
-        { text: '🧬 건강하고 균형 잡힌 영양 전문가', value: 'nutritionist' },
-        { text: '🎊 사회적이고 즐거운 파티 애호가', value: 'socialite' },
-        { text: '🏠 편안하고 안정적인 홈쿡러', value: 'homecook' },
+        { text: '모험적이고 도전적인 맛의 탐험가', value: 'adventurer' },
+        { text: '건강하고 균형 잡힌 영양 전문가', value: 'nutritionist' },
+        { text: '사회적이고 즐거운 파티 애호가', value: 'socialite' },
+        { text: '편안하고 안정적인 홈쿡러', value: 'homecook' },
       ],
     },
     {
       question: '음식에서 가장 어려운 결정은?',
       options: [
-        { text: '🤔 새로운 것과 익숙한 것 사이의 선택', value: 'choice' },
-        { text: '⚖️ 맛과 건강 사이의 균형', value: 'balance' },
-        { text: '👥 개인 취향과 다른 사람 의견 사이', value: 'compromise' },
-        { text: '⏰ 시간과 품질 사이의 선택', value: 'priority' },
+        { text: '새로운 것과 익숙한 것 사이의 선택', value: 'choice' },
+        { text: '맛과 건강 사이의 균형', value: 'balance' },
+        { text: '개인 취향과 다른 사람 의견 사이', value: 'compromise' },
+        { text: '시간과 품질 사이의 선택', value: 'priority' },
       ],
     },
     {
       question: '음식에서 가장 좋아하는 경험은?',
       options: [
         {
-          text: '🗺️ 새로운 레스토랑이나 음식을 발견하는 것',
+          text: '새로운 레스토랑이나 음식을 발견하는 것',
           value: 'exploration',
         },
-        { text: '🥗 건강하고 맛있는 식사를 준비하는 것', value: 'preparation' },
-        { text: '👨‍👩‍👧‍👦 사람들과 함께 요리하고 먹는 것', value: 'sharing' },
-        { text: '🏡 집에서 편안하게 식사하는 것', value: 'comfort' },
+        { text: '건강하고 맛있는 식사를 준비하는 것', value: 'preparation' },
+        { text: '사람들과 함께 요리하고 먹는 것', value: 'sharing' },
+        { text: '집에서 편안하게 식사하는 것', value: 'comfort' },
       ],
     },
     {
       question: '음식에서 당신이 추구하는 가치는?',
       options: [
-        { text: '🌟 새로운 경험과 자극', value: 'stimulation' },
-        { text: '💚 건강과 웰빙', value: 'wellness' },
-        { text: '💖 사람들과의 관계', value: 'relationship' },
-        { text: '😌 평화와 안정', value: 'peace' },
+        { text: '새로운 경험과 자극', value: 'stimulation' },
+        { text: '건강과 웰빙', value: 'wellness' },
+        { text: '사람들과의 관계', value: 'relationship' },
+        { text: '평화와 안정', value: 'peace' },
       ],
     },
     {
       question: '음식을 선택할 때 당신의 직감은?',
       options: [
-        { text: '🔮 "이거 완전 내 스타일일 것 같아!"', value: 'intuitive' },
-        { text: '📋 "영양성분표를 먼저 확인해야겠어"', value: 'analytical' },
+        { text: '"이거 완전 내 스타일일 것 같아!"', value: 'intuitive' },
+        { text: '"영양성분표를 먼저 확인해야겠어"', value: 'analytical' },
         {
-          text: '👂 "다른 사람들이 뭐라고 하는지 들어보자"',
+          text: '"다른 사람들이 뭐라고 하는지 들어보자"',
           value: 'influenced',
         },
-        { text: '✅ "역시 검증된 메뉴가 안전해"', value: 'safe' },
+        { text: '"역시 검증된 메뉴가 안전해"', value: 'safe' },
       ],
     },
     {
       question: '이상적인 식사는?',
       options: [
-        { text: '🎪 놀라운 맛의 서커스 같은 식사', value: 'spectacle' },
-        { text: '🏥 건강검진처럼 완벽한 영양 균형', value: 'perfect' },
-        { text: '🎊 생일파티처럼 즐거운 분위기', value: 'festive' },
-        { text: '🏠 집에서의 편안한 휴식 같은 식사', value: 'cozy' },
+        { text: '놀라운 맛의 서커스 같은 식사', value: 'spectacle' },
+        { text: '건강검진처럼 완벽한 영양 균형', value: 'perfect' },
+        { text: '생일파티처럼 즐거운 분위기', value: 'festive' },
+        { text: '집에서의 편안한 휴식 같은 식사', value: 'cozy' },
       ],
     },
   ],
@@ -190,7 +190,7 @@ export const foodPersonalityQuiz: Quiz = {
         'stimulation',
         'intuitive',
         'spectacle',
-      ].includes(a)
+      ].includes(a as string)
     ).length;
 
     const healthCount = answers.filter((a) =>
@@ -209,7 +209,7 @@ export const foodPersonalityQuiz: Quiz = {
         'wellness',
         'analytical',
         'perfect',
-      ].includes(a)
+      ].includes(a as string)
     ).length;
 
     const socialCount = answers.filter((a) =>
@@ -227,7 +227,7 @@ export const foodPersonalityQuiz: Quiz = {
         'relationship',
         'influenced',
         'festive',
-      ].includes(a)
+      ].includes(a as string)
     ).length;
 
     const comfortCount = answers.filter((a) =>
@@ -245,7 +245,7 @@ export const foodPersonalityQuiz: Quiz = {
         'peace',
         'safe',
         'cozy',
-      ].includes(a)
+      ].includes(a as string)
     ).length;
 
     const scores = [
@@ -261,7 +261,7 @@ export const foodPersonalityQuiz: Quiz = {
 
     const results = {
       adventurous: {
-        title: '🌶️ 마라탕 같은 모험가',
+        title: '마라탕 같은 모험가',
         description: '당신은 마라탕처럼 강렬하고 도전적인 성격의 소유자입니다!',
         detailedDescription: `당신은 마라탕처럼 강렬하고 도전적인 성격을 가지고 있어요. 새로운 경험을 추구하고, 예상치 못한 맛(인생)을 즐기는 모험가입니다. 
 
@@ -283,14 +283,14 @@ export const foodPersonalityQuiz: Quiz = {
           '스트레스',
           '일관성 부족',
         ],
-        goodMatches: ['🍜 라멘 같은 건강가', '🍕 피자 같은 사교가'],
-        badMatches: ['🍞 식빵 같은 안정가'],
+        goodMatches: ['라멘 같은 건강가', '피자 같은 사교가'],
+        badMatches: ['식빵 같은 안정가'],
         goodMatchReasons: [
-          '🍜 라멘 같은 건강가: 함께 건강하면서도 맛있는 새로운 요리를 탐험할 수 있어요',
-          '🍕 피자 같은 사교가: 함께 즐거운 음식(인생) 경험을 나눌 수 있어요',
+          '라멘 같은 건강가: 함께 건강하면서도 맛있는 새로운 요리를 탐험할 수 있어요',
+          '피자 같은 사교가: 함께 즐거운 음식(인생) 경험을 나눌 수 있어요',
         ],
         badMatchReasons: [
-          '🍞 식빵 같은 안정가: 너무 안전하고 보수적인 성향과 맞지 않을 수 있어요',
+          '식빵 같은 안정가: 너무 안전하고 보수적인 성향과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '가끔은 순한 음식(평온한 시간)도 즐겨보세요',
@@ -300,7 +300,7 @@ export const foodPersonalityQuiz: Quiz = {
         ],
       },
       'health-conscious': {
-        title: '🍜 라멘 같은 건강가',
+        title: '라멘 같은 건강가',
         description:
           '당신은 라멘처럼 균형 잡히고 영양가 있는 성격의 소유자입니다!',
         detailedDescription: `당신은 라멘처럼 균형 잡히고 영양가 있는 성격을 가지고 있어요. 면(기본), 국물(감정), 고명(경험)이 모두 조화롭게 어우러진 완벽한 조합이에요.
@@ -317,14 +317,14 @@ export const foodPersonalityQuiz: Quiz = {
           '완벽주의',
           '새로움 회피',
         ],
-        goodMatches: ['🌶️ 마라탕 같은 모험가', '🍞 식빵 같은 안정가'],
-        badMatches: ['🍕 피자 같은 사교가'],
+        goodMatches: ['마라탕 같은 모험가', '식빵 같은 안정가'],
+        badMatches: ['피자 같은 사교가'],
         goodMatchReasons: [
-          '🌶️ 마라탕 같은 모험가: 함께 건강하면서도 맛있는 새로운 요리를 탐험할 수 있어요',
-          '🍞 식빵 같은 안정가: 비슷한 가치관으로 안정적인 관계를 만들 수 있어요',
+          '마라탕 같은 모험가: 함께 건강하면서도 맛있는 새로운 요리를 탐험할 수 있어요',
+          '식빵 같은 안정가: 비슷한 가치관으로 안정적인 관계를 만들 수 있어요',
         ],
         badMatchReasons: [
-          '🍕 피자 같은 사교가: 너무 즉흥적이고 사회적인 성향과 맞지 않을 수 있어요',
+          '피자 같은 사교가: 너무 즉흥적이고 사회적인 성향과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '가끔은 새로운 경험도 시도해보세요',
@@ -334,7 +334,7 @@ export const foodPersonalityQuiz: Quiz = {
         ],
       },
       social: {
-        title: '🍕 피자 같은 사교가',
+        title: '피자 같은 사교가',
         description:
           '당신은 피자처럼 사람들과 함께 나누는 것을 좋아하는 사교적인 성격입니다!',
         detailedDescription: `당신은 피자처럼 사람들과 함께 나누는 것을 좋아하는 사교적인 성격이에요. 피자가 혼자 먹기에는 너무 크고, 여러 사람이 함께 나누어 먹어야 맛있듯이, 당신도 사람들과 함께 있을 때 가장 빛나는 성격이에요.
@@ -363,14 +363,14 @@ export const foodPersonalityQuiz: Quiz = {
           '에너지 소모',
           '의존성',
         ],
-        goodMatches: ['🌶️ 마라탕 같은 모험가', '🍞 식빵 같은 안정가'],
-        badMatches: ['🍜 라멘 같은 건강가'],
+        goodMatches: ['마라탕 같은 모험가', '식빵 같은 안정가'],
+        badMatches: ['라멘 같은 건강가'],
         goodMatchReasons: [
-          '🌶️ 마라탕 같은 모험가: 함께 즐거운 음식(인생) 경험을 나눌 수 있어요',
-          '🍞 식빵 같은 안정가: 안정적인 관계를 바탕으로 즐거운 시간을 보낼 수 있어요',
+          '마라탕 같은 모험가: 함께 즐거운 음식(인생) 경험을 나눌 수 있어요',
+          '식빵 같은 안정가: 안정적인 관계를 바탕으로 즐거운 시간을 보낼 수 있어요',
         ],
         badMatchReasons: [
-          '🍜 라멘 같은 건강가: 너무 체계적이고 완벽주의적인 성향과 맞지 않을 수 있어요',
+          '라멘 같은 건강가: 너무 체계적이고 완벽주의적인 성향과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '가끔은 혼자만의 시간도 가져보세요',
@@ -380,7 +380,7 @@ export const foodPersonalityQuiz: Quiz = {
         ],
       },
       comfort: {
-        title: '🍞 식빵 같은 안정가',
+        title: '식빵 같은 안정가',
         description: '당신은 식빵처럼 편안하고 안정적인 성격의 소유자입니다!',
         detailedDescription: `당신은 식빵처럼 편안하고 안정적인 성격을 가지고 있어요. 식빵이 어떤 음식과도 잘 어울리고, 언제 먹어도 맛있듯이, 당신도 어떤 상황에서도 안정감을 주는 믿음직한 성격이에요.
 
@@ -396,14 +396,14 @@ export const foodPersonalityQuiz: Quiz = {
           '지루함',
           '변화 두려움',
         ],
-        goodMatches: ['🍜 라멘 같은 건강가', '🍕 피자 같은 사교가'],
-        badMatches: ['🌶️ 마라탕 같은 모험가'],
+        goodMatches: ['라멘 같은 건강가', '피자 같은 사교가'],
+        badMatches: ['마라탕 같은 모험가'],
         goodMatchReasons: [
-          '🍜 라멘 같은 건강가: 비슷한 가치관으로 안정적인 관계를 만들 수 있어요',
-          '🍕 피자 같은 사교가: 안정적인 관계를 바탕으로 즐거운 시간을 보낼 수 있어요',
+          '라멘 같은 건강가: 비슷한 가치관으로 안정적인 관계를 만들 수 있어요',
+          '피자 같은 사교가: 안정적인 관계를 바탕으로 즐거운 시간을 보낼 수 있어요',
         ],
         badMatchReasons: [
-          '🌶️ 마라탕 같은 모험가: 너무 도전적이고 변화를 추구하는 성향과 맞지 않을 수 있어요',
+          '마라탕 같은 모험가: 너무 도전적이고 변화를 추구하는 성향과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '가끔은 새로운 경험도 시도해보세요',

@@ -2,7 +2,7 @@ import type { Quiz } from '../../types';
 
 export const stressReliefQuiz: Quiz = {
   id: 'stress-relief',
-  title: '🧘 당신만의 스트레스 해소법은?',
+  title: '당신만의 스트레스 해소법은?',
   description: '스트레스를 받을 때 당신은 어떻게 해소하나요? 당신만의 특별한 스트레스 해소 방법을 찾아보세요!',
   category: '라이프스타일',
   duration: '1분 30초',
@@ -11,136 +11,136 @@ export const stressReliefQuiz: Quiz = {
     {
       question: '스트레스를 받았을 때 가장 먼저 하고 싶은 것은?',
       options: [
-        { text: '🏔️ "조용한 곳에서 혼자만의 시간을 가져!"', value: 'alone' },
-        { text: '💬 "친구나 가족과 대화를 나눠!"', value: 'talk' },
-        { text: '🏃 "운동이나 신체 활동을 해!"', value: 'exercise' },
-        { text: '🎵 "좋아하는 음악을 듣거나 영화를 봐!"', value: 'entertainment' },
+        { text: '"조용한 곳에서 혼자만의 시간을 가져!"', value: 'alone' },
+        { text: '"친구나 가족과 대화를 나눠!"', value: 'talk' },
+        { text: '"운동이나 신체 활동을 해!"', value: 'exercise' },
+        { text: '"좋아하는 음악을 듣거나 영화를 봐!"', value: 'entertainment' },
       ],
     },
     {
       question: '스트레스 상황에서 당신의 반응은?',
       options: [
-        { text: '🧘 "차분히 생각하고 해결책을 찾아!"', value: 'calm' },
-        { text: '💥 "감정적으로 반응하며 즉시 표현해!"', value: 'emotional' },
-        { text: '🏃‍♀️ "활동적으로 움직이며 스트레스를 해소해!"', value: 'active' },
-        { text: '🎯 "다른 일에 집중하여 잠시 잊어!"', value: 'distract' },
+        { text: '"차분히 생각하고 해결책을 찾아!"', value: 'calm' },
+        { text: '"감정적으로 반응하며 즉시 표현해!"', value: 'emotional' },
+        { text: '"활동적으로 움직이며 스트레스를 해소해!"', value: 'active' },
+        { text: '"다른 일에 집중하여 잠시 잊어!"', value: 'distract' },
       ],
     },
     {
       question: '스트레스 해소를 위해 선호하는 활동은?',
       options: [
-        { text: '🧘‍♀️ 명상이나 요가 같은 정적인 활동', value: 'meditation' },
-        { text: '👥 사람들과 만나서 대화하는 것', value: 'social' },
-        { text: '⚽ 운동이나 스포츠 같은 동적인 활동', value: 'sports' },
-        { text: '🎨 취미 활동이나 창작 활동', value: 'hobby' },
+        { text: '명상이나 요가 같은 정적인 활동', value: 'meditation' },
+        { text: '사람들과 만나서 대화하는 것', value: 'social' },
+        { text: '운동이나 스포츠 같은 동적인 활동', value: 'sports' },
+        { text: '취미 활동이나 창작 활동', value: 'hobby' },
       ],
     },
     {
       question: '스트레스로 인한 불안감을 해소하는 방법은?',
       options: [
-        { text: '🌬️ "깊은 호흡과 이완 운동을 해!"', value: 'breathing' },
-        { text: '🤗 "신뢰하는 사람과 이야기를 나눠!"', value: 'sharing' },
-        { text: '🚶‍♀️ "산책이나 가벼운 운동을 해!"', value: 'walking' },
-        { text: '📚 "좋아하는 음악이나 책에 집중해!"', value: 'focus' },
+        { text: '"깊은 호흡과 이완 운동을 해!"', value: 'breathing' },
+        { text: '"신뢰하는 사람과 이야기를 나눠!"', value: 'sharing' },
+        { text: '"산책이나 가벼운 운동을 해!"', value: 'walking' },
+        { text: '"좋아하는 음악이나 책에 집중해!"', value: 'focus' },
       ],
     },
     {
       question: '스트레스 상황에서 가장 도움이 되는 것은?',
       options: [
-        { text: '🌸 조용하고 평화로운 환경', value: 'quiet' },
-        { text: '👥 이해해주는 사람들의 존재', value: 'support' },
-        { text: '🏃‍♂️ 신체적 활동과 움직임', value: 'movement' },
-        { text: '🎨 창의적이고 재미있는 활동', value: 'creative' },
+        { text: '조용하고 평화로운 환경', value: 'quiet' },
+        { text: '이해해주는 사람들의 존재', value: 'support' },
+        { text: '신체적 활동과 움직임', value: 'movement' },
+        { text: '창의적이고 재미있는 활동', value: 'creative' },
       ],
     },
     {
       question: '스트레스를 받을 때 가장 피하고 싶은 것은?',
       options: [
-        { text: '🔊 시끄럽고 복잡한 환경', value: 'noise' },
-        { text: '👤 혼자 있는 시간', value: 'isolation' },
-        { text: '🛋️ 가만히 앉아있는 것', value: 'stillness' },
-        { text: '📊 복잡하고 어려운 일', value: 'complexity' },
+        { text: '시끄럽고 복잡한 환경', value: 'noise' },
+        { text: '혼자 있는 시간', value: 'isolation' },
+        { text: '가만히 앉아있는 것', value: 'stillness' },
+        { text: '복잡하고 어려운 일', value: 'complexity' },
       ],
     },
     {
       question: '스트레스가 쌓였을 때 당신은?',
       options: [
-        { text: '🧘 "내면의 평화를 찾기 위해 조용히 성찰해!"', value: 'reflect' },
-        { text: '📞 "가까운 사람에게 전화해서 털어놔!"', value: 'communicate' },
-        { text: '🏋️ "헬스장에 가서 땀을 흘려!"', value: 'workout' },
-        { text: '🎪 "재미있는 활동으로 기분 전환을 해!"', value: 'fun' },
+        { text: '"내면의 평화를 찾기 위해 조용히 성찰해!"', value: 'reflect' },
+        { text: '"가까운 사람에게 전화해서 털어놔!"', value: 'communicate' },
+        { text: '"헬스장에 가서 땀을 흘려!"', value: 'workout' },
+        { text: '"재미있는 활동으로 기분 전환을 해!"', value: 'fun' },
       ],
     },
     {
       question: '스트레스 해소 후 가장 좋아하는 기분은?',
       options: [
-        { text: '😌 "평온하고 고요한 마음"', value: 'peaceful' },
-        { text: '🤗 "사랑받고 이해받는 느낌"', value: 'loved' },
-        { text: '💪 "활력 넘치고 생기 있는 상태"', value: 'energetic' },
-        { text: '😄 "즐겁고 기분 좋은 상태"', value: 'happy' },
+        { text: '"평온하고 고요한 마음"', value: 'peaceful' },
+        { text: '"사랑받고 이해받는 느낌"', value: 'loved' },
+        { text: '"활력 넘치고 생기 있는 상태"', value: 'energetic' },
+        { text: '"즐겁고 기분 좋은 상태"', value: 'happy' },
       ],
     },
     {
       question: '스트레스를 예방하기 위해 하는 일은?',
       options: [
-        { text: '🧘‍♀️ "규칙적인 명상이나 휴식"', value: 'prevention-calm' },
-        { text: '👫 "소중한 사람들과의 시간"', value: 'prevention-social' },
-        { text: '🏃‍♀️ "꾸준한 운동과 건강 관리"', value: 'prevention-active' },
-        { text: '🎨 "취미나 관심사에 시간 투자"', value: 'prevention-hobby' },
+        { text: '"규칙적인 명상이나 휴식"', value: 'prevention-calm' },
+        { text: '"소중한 사람들과의 시간"', value: 'prevention-social' },
+        { text: '"꾸준한 운동과 건강 관리"', value: 'prevention-active' },
+        { text: '"취미나 관심사에 시간 투자"', value: 'prevention-hobby' },
       ],
     },
     {
       question: '스트레스가 심할 때 가장 효과적인 방법은?',
       options: [
-        { text: '🏔️ "자연 속에서 혼자만의 시간"', value: 'nature-alone' },
-        { text: '💭 "믿을 만한 사람과의 깊은 대화"', value: 'deep-talk' },
-        { text: '🥊 "격렬한 운동으로 에너지 분출"', value: 'intense-exercise' },
-        { text: '🎭 "완전히 다른 활동으로 전환"', value: 'complete-change' },
+        { text: '"자연 속에서 혼자만의 시간"', value: 'nature-alone' },
+        { text: '"믿을 만한 사람과의 깊은 대화"', value: 'deep-talk' },
+        { text: '"격렬한 운동으로 에너지 분출"', value: 'intense-exercise' },
+        { text: '"완전히 다른 활동으로 전환"', value: 'complete-change' },
       ],
     },
     {
       question: '스트레스 해소 스타일을 한 마디로 표현하면?',
       options: [
-        { text: '🧘 "조용하고 평화로운 스타일"', value: 'peaceful-style' },
-        { text: '🤝 "소통하고 공유하는 스타일"', value: 'social-style' },
-        { text: '⚡ "활동적이고 역동적인 스타일"', value: 'active-style' },
-        { text: '🎨 "창의적이고 재미있는 스타일"', value: 'creative-style' },
+        { text: '"조용하고 평화로운 스타일"', value: 'peaceful-style' },
+        { text: '"소통하고 공유하는 스타일"', value: 'social-style' },
+        { text: '"활동적이고 역동적인 스타일"', value: 'active-style' },
+        { text: '"창의적이고 재미있는 스타일"', value: 'creative-style' },
       ],
     },
     {
       question: '스트레스 받을 때 가장 필요한 것은?',
       options: [
-        { text: '🌙 "조용한 공간과 충분한 휴식"', value: 'rest' },
-        { text: '💖 "따뜻한 위로와 공감"', value: 'comfort' },
-        { text: '🔥 "에너지 발산과 활동"', value: 'energy' },
-        { text: '🎪 "즐거움과 기분 전환"', value: 'joy' },
+        { text: '"조용한 공간과 충분한 휴식"', value: 'rest' },
+        { text: '"따뜻한 위로와 공감"', value: 'comfort' },
+        { text: '"에너지 발산과 활동"', value: 'energy' },
+        { text: '"즐거움과 기분 전환"', value: 'joy' },
       ],
     },
     {
       question: '스트레스 관리에서 가장 중요한 것은?',
       options: [
-        { text: '🧘‍♂️ "마음의 평온과 균형"', value: 'balance' },
-        { text: '👥 "인간관계와 소통"', value: 'connection' },
-        { text: '💪 "신체적 건강과 활력"', value: 'health' },
-        { text: '😊 "긍정적 마인드와 즐거움"', value: 'positivity' },
+        { text: '"마음의 평온과 균형"', value: 'balance' },
+        { text: '"인간관계와 소통"', value: 'connection' },
+        { text: '"신체적 건강과 활력"', value: 'health' },
+        { text: '"긍정적 마인드와 즐거움"', value: 'positivity' },
       ],
     },
     {
       question: '이상적인 스트레스 해소 환경은?',
       options: [
-        { text: '🏔️ "자연 속의 조용한 공간"', value: 'nature' },
-        { text: '☕ "편안한 카페나 친구 집"', value: 'cozy' },
-        { text: '🏃‍♀️ "체육관이나 운동장"', value: 'gym' },
-        { text: '🎨 "창작 스튜디오나 놀이공간"', value: 'studio' },
+        { text: '"자연 속의 조용한 공간"', value: 'nature' },
+        { text: '"편안한 카페나 친구 집"', value: 'cozy' },
+        { text: '"체육관이나 운동장"', value: 'gym' },
+        { text: '"창작 스튜디오나 놀이공간"', value: 'studio' },
       ],
     },
     {
       question: '스트레스 해소 후 얻고 싶은 것은?',
       options: [
-        { text: '🌸 "내면의 평화와 안정감"', value: 'inner-peace' },
-        { text: '💕 "사랑과 연결감"', value: 'love-connection' },
-        { text: '⚡ "에너지와 활력"', value: 'vitality' },
-        { text: '✨ "영감과 창의성"', value: 'inspiration' },
+        { text: '"내면의 평화와 안정감"', value: 'inner-peace' },
+        { text: '"사랑과 연결감"', value: 'love-connection' },
+        { text: '"에너지와 활력"', value: 'vitality' },
+        { text: '"영감과 창의성"', value: 'inspiration' },
       ],
     },
   ],
@@ -239,7 +239,7 @@ export const stressReliefQuiz: Quiz = {
 
     const results = {
       calm: {
-        title: '🏔️ 산속 같은 평온한 명상가',
+        title: '산속 같은 평온한 명상가',
         description: '당신은 산속의 고요한 명상가처럼 평온함 속에서 스트레스를 해소하는 스타일입니다!',
         detailedDescription: `당신은 산속의 명상가처럼 고요하고 평온한 성격을 가지고 있어요. 스트레스를 받을 때 혼자만의 시간을 가지며 내면의 평화를 찾아 마음을 다스리는 평온한 명상가입니다.
 
@@ -261,14 +261,14 @@ export const stressReliefQuiz: Quiz = {
           '현실 회피',
           '에너지 부족',
         ],
-        goodMatches: ['🤝 따뜻한 카페 같은 소통가', '🎨 무지개 같은 창의가'],
-        badMatches: ['⚡ 번개 같은 활동가'],
+        goodMatches: ['따뜻한 카페 같은 소통가', '무지개 같은 창의가'],
+        badMatches: ['번개 같은 활동가'],
         goodMatchReasons: [
-          '🤝 따뜻한 카페 같은 소통가: 당신의 평온함이 상대방의 소통 능력과 조화를 이룰 수 있어요',
-          '🎨 무지개 같은 창의가: 함께 평화롭고 창의적인 환경을 만들 수 있어요',
+          '따뜻한 카페 같은 소통가: 당신의 평온함이 상대방의 소통 능력과 조화를 이룰 수 있어요',
+          '무지개 같은 창의가: 함께 평화롭고 창의적인 환경을 만들 수 있어요',
         ],
         badMatchReasons: [
-          '⚡ 번개 같은 활동가: 너무 활동적이고 역동적인 방식과 맞지 않을 수 있어요',
+          '번개 같은 활동가: 너무 활동적이고 역동적인 방식과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '가끔은 사람들과의 소통도 시도해보세요',
@@ -278,7 +278,7 @@ export const stressReliefQuiz: Quiz = {
         ],
       },
       social: {
-        title: '🤝 따뜻한 카페 같은 소통가',
+        title: '따뜻한 카페 같은 소통가',
         description: '당신은 따뜻한 카페처럼 사람들과의 소통을 통해 스트레스를 해소하는 스타일입니다!',
         detailedDescription: `당신은 따뜻한 카페처럼 아늑하고 소통을 중시하는 성격을 가지고 있어요. 스트레스를 받을 때 사람들과 대화를 나누고 감정을 공유하며 위로받는 것을 좋아하는 소통가입니다.
 
@@ -300,14 +300,14 @@ export const stressReliefQuiz: Quiz = {
           '혼자 시간 어려움',
           '타인 의존',
         ],
-        goodMatches: ['🏔️ 산속 같은 평온한 명상가', '⚡ 번개 같은 활동가'],
-        badMatches: ['🎨 무지개 같은 창의가'],
+        goodMatches: ['산속 같은 평온한 명상가', '번개 같은 활동가'],
+        badMatches: ['무지개 같은 창의가'],
         goodMatchReasons: [
-          '🏔️ 산속 같은 평온한 명상가: 당신의 소통력이 상대방의 평온함과 조화를 이룰 수 있어요',
-          '⚡ 번개 같은 활동가: 함께 활발하고 사교적인 환경을 만들 수 있어요',
+          '산속 같은 평온한 명상가: 당신의 소통력이 상대방의 평온함과 조화를 이룰 수 있어요',
+          '번개 같은 활동가: 함께 활발하고 사교적인 환경을 만들 수 있어요',
         ],
         badMatchReasons: [
-          '🎨 무지개 같은 창의가: 너무 개인적이고 창의적인 방식과 맞지 않을 수 있어요',
+          '무지개 같은 창의가: 너무 개인적이고 창의적인 방식과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '혼자만의 시간도 가져보세요',
@@ -317,7 +317,7 @@ export const stressReliefQuiz: Quiz = {
         ],
       },
       active: {
-        title: '⚡ 번개 같은 활동가',
+        title: '번개 같은 활동가',
         description: '당신은 번개처럼 역동적이고 활발한 신체 활동을 통해 스트레스를 해소하는 스타일입니다!',
         detailedDescription: `당신은 번개처럼 역동적이고 에너지 넘치는 성격을 가지고 있어요. 스트레스를 받을 때 운동이나 신체 활동을 통해 에너지를 발산하며 스트레스를 해소하는 활발한 활동가입니다.
 
@@ -339,14 +339,14 @@ export const stressReliefQuiz: Quiz = {
           '번아웃',
           '정신적 성찰 부족',
         ],
-        goodMatches: ['🤝 따뜻한 카페 같은 소통가', '🎨 무지개 같은 창의가'],
-        badMatches: ['🏔️ 산속 같은 평온한 명상가'],
+        goodMatches: ['따뜻한 카페 같은 소통가', '무지개 같은 창의가'],
+        badMatches: ['산속 같은 평온한 명상가'],
         goodMatchReasons: [
-          '🤝 따뜻한 카페 같은 소통가: 함께 활발하고 사교적인 환경을 만들 수 있어요',
-          '🎨 무지개 같은 창의가: 당신의 활동성이 상대방의 창의성과 조화를 이룰 수 있어요',
+          '따뜻한 카페 같은 소통가: 함께 활발하고 사교적인 환경을 만들 수 있어요',
+          '무지개 같은 창의가: 당신의 활동성이 상대방의 창의성과 조화를 이룰 수 있어요',
         ],
         badMatchReasons: [
-          '🏔️ 산속 같은 평온한 명상가: 너무 조용하고 정적인 방식과 맞지 않을 수 있어요',
+          '산속 같은 평온한 명상가: 너무 조용하고 정적인 방식과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '적절한 휴식도 취해보세요',
@@ -356,7 +356,7 @@ export const stressReliefQuiz: Quiz = {
         ],
       },
       creative: {
-        title: '🎨 무지개 같은 창의가',
+        title: '무지개 같은 창의가',
         description: '당신은 무지개처럼 다채롭고 창의적인 활동을 통해 스트레스를 해소하는 스타일입니다!',
         detailedDescription: `당신은 무지개처럼 다채롭고 창의적인 성격을 가지고 있어요. 스트레스를 받을 때 취미 활동이나 창작을 통해 기분 전환을 하며 스트레스를 해소하는 창의적인 예술가입니다.
 
@@ -378,14 +378,14 @@ export const stressReliefQuiz: Quiz = {
           '현실 도피',
           '근본 해결 미룸',
         ],
-        goodMatches: ['🏔️ 산속 같은 평온한 명상가', '⚡ 번개 같은 활동가'],
-        badMatches: ['🤝 따뜻한 카페 같은 소통가'],
+        goodMatches: ['산속 같은 평온한 명상가', '번개 같은 활동가'],
+        badMatches: ['따뜻한 카페 같은 소통가'],
         goodMatchReasons: [
-          '🏔️ 산속 같은 평온한 명상가: 함께 평화롭고 창의적인 환경을 만들 수 있어요',
-          '⚡ 번개 같은 활동가: 당신의 창의성이 상대방의 활동성과 조화를 이룰 수 있어요',
+          '산속 같은 평온한 명상가: 함께 평화롭고 창의적인 환경을 만들 수 있어요',
+          '번개 같은 활동가: 당신의 창의성이 상대방의 활동성과 조화를 이룰 수 있어요',
         ],
         badMatchReasons: [
-          '🤝 따뜻한 카페 같은 소통가: 너무 사교적이고 소통 중심적인 방식과 맞지 않을 수 있어요',
+          '따뜻한 카페 같은 소통가: 너무 사교적이고 소통 중심적인 방식과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '근본적인 문제 해결도 시도해보세요',

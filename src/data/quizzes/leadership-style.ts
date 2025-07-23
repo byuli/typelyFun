@@ -2,7 +2,7 @@ import type { Quiz } from '../../types';
 
 export const leadershipStyleQuiz: Quiz = {
   id: 'leadership-style',
-  title: '👑 당신은 어떤 리더인가요?',
+  title: '당신은 어떤 리더인가요?',
   description:
     '리더십 스타일로 알아보는 당신의 숨겨진 지도자 기질! 어떤 리더와 가장 닮았을까요?',
   category: '직업',
@@ -13,19 +13,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '팀원들이 문제를 해결하지 못할 때 당신은?',
       options: [
         {
-          text: '⚡ "내가 직접 해결해주겠어!" (즉시 개입)',
+          text: '"내가 직접 해결해주겠어!" (즉시 개입)',
           value: 'directive',
         },
         {
-          text: '🤝 "다 같이 머리를 맞대고 해결해보자!" (협력 추구)',
+          text: '"다 같이 머리를 맞대고 해결해보자!" (협력 추구)',
           value: 'participative',
         },
         {
-          text: '💪 "너희도 할 수 있어! 힘내!" (격려와 지원)',
+          text: '"너희도 할 수 있어! 힘내!" (격려와 지원)',
           value: 'supportive',
         },
         {
-          text: '🔍 "전문가를 찾아서 도움을 받아보자!" (외부 자원 활용)',
+          text: '"전문가를 찾아서 도움을 받아보자!" (외부 자원 활용)',
           value: 'delegative',
         },
       ],
@@ -34,19 +34,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '새로운 프로젝트를 시작할 때 당신은?',
       options: [
         {
-          text: '📋 "명확한 목표와 계획을 세우고 실행하자!" (체계적 지시)',
+          text: '"명확한 목표와 계획을 세우고 실행하자!" (체계적 지시)',
           value: 'structured',
         },
         {
-          text: '🎯 "팀원들과 함께 목표를 설정해보자!" (공동 설정)',
+          text: '"팀원들과 함께 목표를 설정해보자!" (공동 설정)',
           value: 'collaborative',
         },
         {
-          text: '🌟 "각자의 아이디어를 들어보고 발전시켜보자!" (개인 의견 수렴)',
+          text: '"각자의 아이디어를 들어보고 발전시켜보자!" (개인 의견 수렴)',
           value: 'individual',
         },
         {
-          text: '🦅 "자유롭게 해보고 필요할 때만 도와줄게!" (자율성 부여)',
+          text: '"자유롭게 해보고 필요할 때만 도와줄게!" (자율성 부여)',
           value: 'autonomous',
         },
       ],
@@ -55,19 +55,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '팀원이 실수를 했을 때 당신은?',
       options: [
         {
-          text: '⚡ "즉시 수정하고 올바른 방법을 가르쳐주자!" (즉시 교정)',
+          text: '"즉시 수정하고 올바른 방법을 가르쳐주자!" (즉시 교정)',
           value: 'immediate',
         },
         {
-          text: '🔍 "실수 원인을 함께 분석하고 개선해보자!" (공동 분석)',
+          text: '"실수 원인을 함께 분석하고 개선해보자!" (공동 분석)',
           value: 'analysis',
         },
         {
-          text: '💪 "실수는 학습의 기회야! 다음엔 더 잘할 거야!" (긍정적 격려)',
+          text: '"실수는 학습의 기회야! 다음엔 더 잘할 거야!" (긍정적 격려)',
           value: 'positive',
         },
         {
-          text: '🦅 "스스로 깨달을 수 있도록 기다려보자!" (자기 성찰)',
+          text: '"스스로 깨달을 수 있도록 기다려보자!" (자기 성찰)',
           value: 'reflection',
         },
       ],
@@ -76,19 +76,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '팀의 성과가 좋지 않을 때 당신은?',
       options: [
         {
-          text: '⚡ "더 엄격한 관리와 감독을 강화하자!" (강화된 관리)',
+          text: '"더 엄격한 관리와 감독을 강화하자!" (강화된 관리)',
           value: 'strict',
         },
         {
-          text: '🤝 "팀 전체와 함께 문제점을 분석해보자!" (공동 해결)',
+          text: '"팀 전체와 함께 문제점을 분석해보자!" (공동 해결)',
           value: 'team-solution',
         },
         {
-          text: '💪 "사기를 높이고 동기부여에 집중하자!" (사기 향상)',
+          text: '"사기를 높이고 동기부여에 집중하자!" (사기 향상)',
           value: 'morale',
         },
         {
-          text: '🦅 "자율성을 높이고 책임감을 강화하자!" (자율성 증대)',
+          text: '"자율성을 높이고 책임감을 강화하자!" (자율성 증대)',
           value: 'autonomy',
         },
       ],
@@ -97,19 +97,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '새로운 팀원이 합류했을 때 당신은?',
       options: [
         {
-          text: '📋 "명확한 역할과 책임을 부여하고 규칙을 설명해주자!" (체계적 안내)',
+          text: '"명확한 역할과 책임을 부여하고 규칙을 설명해주자!" (체계적 안내)',
           value: 'systematic',
         },
         {
-          text: '🎉 "팀 전체와 함께 환영하고 팀 문화를 소개해보자!" (팀 환영)',
+          text: '"팀 전체와 함께 환영하고 팀 문화를 소개해보자!" (팀 환영)',
           value: 'team-welcome',
         },
         {
-          text: '💬 "개인적으로 대화하며 편안하게 적응할 수 있도록 도와주자!" (개별 지원)',
+          text: '"개인적으로 대화하며 편안하게 적응할 수 있도록 도와주자!" (개별 지원)',
           value: 'personal',
         },
         {
-          text: '🦅 "자연스럽게 알아가도록 기다려보자!" (자연스러운 적응)',
+          text: '"자연스럽게 알아가도록 기다려보자!" (자연스러운 적응)',
           value: 'natural',
         },
       ],
@@ -118,19 +118,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '중요한 의사결정을 해야 할 때 당신은?',
       options: [
         {
-          text: '⚡ "내 판단으로 빠르게 결정하자!" (신속한 결정)',
+          text: '"내 판단으로 빠르게 결정하자!" (신속한 결정)',
           value: 'quick',
         },
         {
-          text: '🤝 "팀원들의 의견을 수렴하여 합의점을 찾아보자!" (합의 도출)',
+          text: '"팀원들의 의견을 수렴하여 합의점을 찾아보자!" (합의 도출)',
           value: 'consensus',
         },
         {
-          text: '💭 "팀원들의 감정과 생각을 고려하여 결정하자!" (감정 고려)',
+          text: '"팀원들의 감정과 생각을 고려하여 결정하자!" (감정 고려)',
           value: 'emotional',
         },
         {
-          text: '🔍 "전문가나 해당 분야 담당자에게 결정을 위임하자!" (전문가 위임)',
+          text: '"전문가나 해당 분야 담당자에게 결정을 위임하자!" (전문가 위임)',
           value: 'expert',
         },
       ],
@@ -139,19 +139,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '팀원이 개인적인 문제로 어려움을 겪고 있을 때 당신은?',
       options: [
         {
-          text: '📋 "업무에 영향을 주지 않도록 명확한 기준을 제시하자!" (업무 우선)',
+          text: '"업무에 영향을 주지 않도록 명확한 기준을 제시하자!" (업무 우선)',
           value: 'work-focused',
         },
         {
-          text: '🤝 "팀 전체가 함께 도울 수 있는 방법을 찾아보자!" (팀 지원)',
+          text: '"팀 전체가 함께 도울 수 있는 방법을 찾아보자!" (팀 지원)',
           value: 'team-support',
         },
         {
-          text: '💬 "개인적으로 상담하고 정서적 지원을 제공하자!" (개별 상담)',
+          text: '"개인적으로 상담하고 정서적 지원을 제공하자!" (개별 상담)',
           value: 'counseling',
         },
         {
-          text: '🦅 "스스로 해결할 수 있도록 시간을 주자!" (자기 해결)',
+          text: '"스스로 해결할 수 있도록 시간을 주자!" (자기 해결)',
           value: 'self-solve',
         },
       ],
@@ -160,19 +160,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '새로운 기술이나 방법을 도입할 때 당신은?',
       options: [
         {
-          text: '⚡ "강제로 도입하고 적응을 요구하자!" (강제 도입)',
+          text: '"강제로 도입하고 적응을 요구하자!" (강제 도입)',
           value: 'forced',
         },
         {
-          text: '🤝 "팀원들과 함께 학습하고 적용 방법을 논의하자!" (공동 학습)',
+          text: '"팀원들과 함께 학습하고 적용 방법을 논의하자!" (공동 학습)',
           value: 'learning',
         },
         {
-          text: '💭 "팀원들의 걱정을 듣고 단계적으로 도입하자!" (단계적 도입)',
+          text: '"팀원들의 걱정을 듣고 단계적으로 도입하자!" (단계적 도입)',
           value: 'gradual',
         },
         {
-          text: '🦅 "관심 있는 팀원들이 먼저 시도하도록 하자!" (자발적 시도)',
+          text: '"관심 있는 팀원들이 먼저 시도하도록 하자!" (자발적 시도)',
           value: 'voluntary',
         },
       ],
@@ -181,19 +181,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '팀원 간 갈등이 발생했을 때 당신은?',
       options: [
         {
-          text: '⚡ "즉시 개입하여 명확한 해결책을 제시하자!" (즉시 중재)',
+          text: '"즉시 개입하여 명확한 해결책을 제시하자!" (즉시 중재)',
           value: 'mediate',
         },
         {
-          text: '🤝 "모든 당사자들을 모아서 대화를 통해 해결하자!" (대화 중재)',
+          text: '"모든 당사자들을 모아서 대화를 통해 해결하자!" (대화 중재)',
           value: 'dialogue',
         },
         {
-          text: '💬 "각자의 입장을 개별적으로 듣고 중재하자!" (개별 중재)',
+          text: '"각자의 입장을 개별적으로 듣고 중재하자!" (개별 중재)',
           value: 'individual-mediate',
         },
         {
-          text: '🦅 "스스로 해결할 수 있도록 기다려보자!" (자기 해결)',
+          text: '"스스로 해결할 수 있도록 기다려보자!" (자기 해결)',
           value: 'self-resolve',
         },
       ],
@@ -202,19 +202,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '팀의 목표를 설정할 때 당신은?',
       options: [
         {
-          text: '🎯 "도전적이고 구체적인 목표를 제시하자!" (도전적 목표)',
+          text: '"도전적이고 구체적인 목표를 제시하자!" (도전적 목표)',
           value: 'challenging',
         },
         {
-          text: '🤝 "팀원들과 함께 현실적이고 의미 있는 목표를 설정하자!" (공동 설정)',
+          text: '"팀원들과 함께 현실적이고 의미 있는 목표를 설정하자!" (공동 설정)',
           value: 'realistic',
         },
         {
-          text: '🌟 "개인적 목표와 조화를 이루도록 하자!" (개인 조화)',
+          text: '"개인적 목표와 조화를 이루도록 하자!" (개인 조화)',
           value: 'personal-harmony',
         },
         {
-          text: '🦅 "스스로 목표를 설정하도록 하자!" (자율 설정)',
+          text: '"스스로 목표를 설정하도록 하자!" (자율 설정)',
           value: 'self-set',
         },
       ],
@@ -223,19 +223,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '팀원의 성과를 평가할 때 당신은?',
       options: [
         {
-          text: '📊 "명확한 기준과 수치로 객관적으로 평가하자!" (객관적 평가)',
+          text: '"명확한 기준과 수치로 객관적으로 평가하자!" (객관적 평가)',
           value: 'objective',
         },
         {
-          text: '🤝 "팀원과 함께 성과를 분석하고 개선점을 논의하자!" (공동 평가)',
+          text: '"팀원과 함께 성과를 분석하고 개선점을 논의하자!" (공동 평가)',
           value: 'joint',
         },
         {
-          text: '💪 "개인의 노력과 성장에 초점을 맞추자!" (성장 중심)',
+          text: '"개인의 노력과 성장에 초점을 맞추자!" (성장 중심)',
           value: 'growth',
         },
         {
-          text: '🦅 "스스로 평가하고 반성할 수 있도록 하자!" (자기 평가)',
+          text: '"스스로 평가하고 반성할 수 있도록 하자!" (자기 평가)',
           value: 'self-evaluate',
         },
       ],
@@ -244,19 +244,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '업무 환경을 개선할 때 당신은?',
       options: [
         {
-          text: '⚡ "효율성을 높이는 방향으로 즉시 개선하자!" (효율성 우선)',
+          text: '"효율성을 높이는 방향으로 즉시 개선하자!" (효율성 우선)',
           value: 'efficiency',
         },
         {
-          text: '🤝 "팀원들의 의견을 수렴하여 함께 개선하자!" (공동 개선)',
+          text: '"팀원들의 의견을 수렴하여 함께 개선하자!" (공동 개선)',
           value: 'collaborative-improve',
         },
         {
-          text: '😌 "편안하게 일할 수 있는 환경을 만들자!" (편안함 우선)',
+          text: '"편안하게 일할 수 있는 환경을 만들자!" (편안함 우선)',
           value: 'comfort',
         },
         {
-          text: '🦅 "원하는 대로 환경을 조성하도록 하자!" (자율 조성)',
+          text: '"원하는 대로 환경을 조성하도록 하자!" (자율 조성)',
           value: 'self-design',
         },
       ],
@@ -265,19 +265,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '팀원이 새로운 아이디어를 제안했을 때 당신은?',
       options: [
         {
-          text: '⚡ "실행 가능성을 검토하고 즉시 판단하자!" (신속한 검토)',
+          text: '"실행 가능성을 검토하고 즉시 판단하자!" (신속한 검토)',
           value: 'quick-review',
         },
         {
-          text: '🤝 "팀 전체와 함께 아이디어를 발전시키자!" (공동 발전)',
+          text: '"팀 전체와 함께 아이디어를 발전시키자!" (공동 발전)',
           value: 'develop',
         },
         {
-          text: '💡 "창의적인 아이디어를 격려하고 지원하자!" (창의성 지원)',
+          text: '"창의적인 아이디어를 격려하고 지원하자!" (창의성 지원)',
           value: 'creative',
         },
         {
-          text: '🦅 "스스로 실험해볼 수 있도록 하자!" (자율 실험)',
+          text: '"스스로 실험해볼 수 있도록 하자!" (자율 실험)',
           value: 'self-experiment',
         },
       ],
@@ -286,19 +286,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '긴급한 상황이 발생했을 때 당신은?',
       options: [
         {
-          text: '⚡ "즉시 지시하고 모든 팀원을 동원하자!" (즉시 대응)',
+          text: '"즉시 지시하고 모든 팀원을 동원하자!" (즉시 대응)',
           value: 'immediate-response',
         },
         {
-          text: '🤝 "팀원들과 함께 상황을 분석하고 대응하자!" (공동 대응)',
+          text: '"팀원들과 함께 상황을 분석하고 대응하자!" (공동 대응)',
           value: 'joint-response',
         },
         {
-          text: '🛡️ "팀원들의 안전과 안녕을 우선시하자!" (안전 우선)',
+          text: '"팀원들의 안전과 안녕을 우선시하자!" (안전 우선)',
           value: 'safety',
         },
         {
-          text: '🔍 "각자의 전문성을 활용하여 분산 대응하자!" (전문성 활용)',
+          text: '"각자의 전문성을 활용하여 분산 대응하자!" (전문성 활용)',
           value: 'expertise',
         },
       ],
@@ -307,19 +307,19 @@ export const leadershipStyleQuiz: Quiz = {
       question: '팀원의 개인적 성장을 돕고 싶을 때 당신은?',
       options: [
         {
-          text: '📋 "명확한 교육 계획과 목표를 제시하자!" (체계적 교육)',
+          text: '"명확한 교육 계획과 목표를 제시하자!" (체계적 교육)',
           value: 'systematic-education',
         },
         {
-          text: '🤝 "팀원과 함께 성장 목표를 설정하고 계획하자!" (공동 계획)',
+          text: '"팀원과 함께 성장 목표를 설정하고 계획하자!" (공동 계획)',
           value: 'joint-plan',
         },
         {
-          text: '🌟 "개인적 관심사와 강점을 파악하여 지원하자!" (개별 지원)',
+          text: '"개인적 관심사와 강점을 파악하여 지원하자!" (개별 지원)',
           value: 'individual-support',
         },
         {
-          text: '🦅 "스스로 학습할 수 있는 기회를 제공하자!" (자율 학습)',
+          text: '"스스로 학습할 수 있는 기회를 제공하자!" (자율 학습)',
           value: 'self-learning',
         },
       ],
@@ -343,7 +343,7 @@ export const leadershipStyleQuiz: Quiz = {
         'quick-review',
         'immediate-response',
         'systematic-education',
-      ].includes(a)
+      ].includes(a as string)
     ).length;
 
     const participativeCount = answers.filter((a) =>
@@ -363,7 +363,7 @@ export const leadershipStyleQuiz: Quiz = {
         'develop',
         'joint-response',
         'joint-plan',
-      ].includes(a)
+      ].includes(a as string)
     ).length;
 
     const supportiveCount = answers.filter((a) =>
@@ -383,7 +383,7 @@ export const leadershipStyleQuiz: Quiz = {
         'creative',
         'safety',
         'individual-support',
-      ].includes(a)
+      ].includes(a as string)
     ).length;
 
     const delegativeCount = answers.filter((a) =>
@@ -403,7 +403,7 @@ export const leadershipStyleQuiz: Quiz = {
         'self-experiment',
         'expertise',
         'self-learning',
-      ].includes(a)
+      ].includes(a as string)
     ).length;
 
     const scores = [
@@ -419,7 +419,7 @@ export const leadershipStyleQuiz: Quiz = {
 
     const results = {
       directive: {
-        title: '⚡ 번개 같은 지시형 리더',
+        title: '번개 같은 지시형 리더',
         description:
           '당신은 번개처럼 빠르고 명확한 지시를 내리는 리더십 스타일의 소유자입니다!',
         detailedDescription: `당신은 번개처럼 빠르고 명확한 지시를 내리는 리더십 스타일을 가지고 있어요. 직접 해결책을 제시하고 지시하는 방식으로 팀을 이끄는 지시형 리더입니다.
@@ -443,16 +443,16 @@ export const leadershipStyleQuiz: Quiz = {
           '창의성 부족',
         ],
         goodMatches: [
-          '💪 격려하는 코치 같은 지원형 리더',
-          '🤝 협력하는 팀장 같은 참여형 리더',
+          '격려하는 코치 같은 지원형 리더',
+          '협력하는 팀장 같은 참여형 리더',
         ],
-        badMatches: ['🦅 자유로운 독수리 같은 위임형 리더'],
+        badMatches: ['자유로운 독수리 같은 위임형 리더'],
         goodMatchReasons: [
-          '💪 격려하는 코치 같은 지원형 리더: 당신의 체계성이 상대방의 따뜻함과 조화를 이룰 수 있어요',
-          '🤝 협력하는 팀장 같은 참여형 리더: 함께 효율적이고 협력적인 팀을 만들 수 있어요',
+          '격려하는 코치 같은 지원형 리더: 당신의 체계성이 상대방의 따뜻함과 조화를 이룰 수 있어요',
+          '협력하는 팀장 같은 참여형 리더: 함께 효율적이고 협력적인 팀을 만들 수 있어요',
         ],
         badMatchReasons: [
-          '🦅 자유로운 독수리 같은 위임형 리더: 너무 자유롭고 자율적인 성향과 맞지 않을 수 있어요',
+          '자유로운 독수리 같은 위임형 리더: 너무 자유롭고 자율적인 성향과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '가끔은 팀원 의견도 수용해보세요',
@@ -462,7 +462,7 @@ export const leadershipStyleQuiz: Quiz = {
         ],
       },
       participative: {
-        title: '🤝 협력하는 팀장 같은 참여형 리더',
+        title: '협력하는 팀장 같은 참여형 리더',
         description:
           '당신은 협력하는 팀장처럼 팀원들과 함께 의사결정을 하는 리더십 스타일의 소유자입니다!',
         detailedDescription: `당신은 협력하는 팀장처럼 팀원들과 함께 토론하여 해결책을 찾는 리더십 스타일을 가지고 있어요. 팀원들의 의견을 존중하고, 집단지성을 활용하는 참여형 리더입니다.
@@ -480,16 +480,16 @@ export const leadershipStyleQuiz: Quiz = {
           '시간 소모',
         ],
         goodMatches: [
-          '⚡ 번개 같은 지시형 리더',
-          '💪 격려하는 코치 같은 지원형 리더',
+          '번개 같은 지시형 리더',
+          '격려하는 코치 같은 지원형 리더',
         ],
-        badMatches: ['🦅 자유로운 독수리 같은 위임형 리더'],
+        badMatches: ['자유로운 독수리 같은 위임형 리더'],
         goodMatchReasons: [
-          '⚡ 번개 같은 지시형 리더: 당신의 협력성이 상대방의 결단력과 조화를 이룰 수 있어요',
-          '💪 격려하는 코치 같은 지원형 리더: 함께 따뜻하고 협력적인 팀을 만들 수 있어요',
+          '번개 같은 지시형 리더: 당신의 협력성이 상대방의 결단력과 조화를 이룰 수 있어요',
+          '격려하는 코치 같은 지원형 리더: 함께 따뜻하고 협력적인 팀을 만들 수 있어요',
         ],
         badMatchReasons: [
-          '🦅 자유로운 독수리 같은 위임형 리더: 너무 자유롭고 독립적인 성향과 맞지 않을 수 있어요',
+          '자유로운 독수리 같은 위임형 리더: 너무 자유롭고 독립적인 성향과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '결정력도 기르세요',
@@ -499,7 +499,7 @@ export const leadershipStyleQuiz: Quiz = {
         ],
       },
       supportive: {
-        title: '💪 격려하는 코치 같은 지원형 리더',
+        title: '격려하는 코치 같은 지원형 리더',
         description:
           '당신은 격려하는 코치처럼 팀원들의 성장을 지원하는 리더십 스타일의 소유자입니다!',
         detailedDescription: `당신은 격려하는 코치처럼 팀원들이 스스로 해결할 수 있도록 격려하고 지원하는 리더십 스타일을 가지고 있어요. 팀원들의 성장을 지원하고, 따뜻한 분위기를 만드는 지원형 리더입니다.
@@ -523,16 +523,16 @@ export const leadershipStyleQuiz: Quiz = {
           '성과 부족',
         ],
         goodMatches: [
-          '⚡ 번개 같은 지시형 리더',
-          '🤝 협력하는 팀장 같은 참여형 리더',
+          '번개 같은 지시형 리더',
+          '협력하는 팀장 같은 참여형 리더',
         ],
-        badMatches: ['🦅 자유로운 독수리 같은 위임형 리더'],
+        badMatches: ['자유로운 독수리 같은 위임형 리더'],
         goodMatchReasons: [
-          '⚡ 번개 같은 지시형 리더: 당신의 따뜻함이 상대방의 체계성과 조화를 이룰 수 있어요',
-          '🤝 협력하는 팀장 같은 참여형 리더: 함께 따뜻하고 협력적인 팀을 만들 수 있어요',
+          '번개 같은 지시형 리더: 당신의 따뜻함이 상대방의 체계성과 조화를 이룰 수 있어요',
+          '협력하는 팀장 같은 참여형 리더: 함께 따뜻하고 협력적인 팀을 만들 수 있어요',
         ],
         badMatchReasons: [
-          '🦅 자유로운 독수리 같은 위임형 리더: 너무 자유롭고 독립적인 성향과 맞지 않을 수 있어요',
+          '자유로운 독수리 같은 위임형 리더: 너무 자유롭고 독립적인 성향과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '결단력도 기르세요',
@@ -542,7 +542,7 @@ export const leadershipStyleQuiz: Quiz = {
         ],
       },
       delegative: {
-        title: '🦅 자유로운 독수리 같은 위임형 리더',
+        title: '자유로운 독수리 같은 위임형 리더',
         description:
           '당신은 자유로운 독수리처럼 팀원들에게 자율성을 부여하는 리더십 스타일의 소유자입니다!',
         detailedDescription: `당신은 자유로운 독수리처럼 전문가의 조언을 구하거나 외부 자원을 활용하는 리더십 스타일을 가지고 있어요. 팀원들에게 자율성을 부여하고, 필요할 때만 개입하는 위임형 리더입니다.
@@ -566,16 +566,16 @@ export const leadershipStyleQuiz: Quiz = {
           '소통 부족',
         ],
         goodMatches: [
-          '🤝 협력하는 팀장 같은 참여형 리더',
-          '💪 격려하는 코치 같은 지원형 리더',
+          '협력하는 팀장 같은 참여형 리더',
+          '격려하는 코치 같은 지원형 리더',
         ],
-        badMatches: ['⚡ 번개 같은 지시형 리더'],
+        badMatches: ['번개 같은 지시형 리더'],
         goodMatchReasons: [
-          '🤝 협력하는 팀장 같은 참여형 리더: 당신의 자율성이 상대방의 협력과 조화를 이룰 수 있어요',
-          '💪 격려하는 코치 같은 지원형 리더: 함께 자율적이고 따뜻한 팀을 만들 수 있어요',
+          '협력하는 팀장 같은 참여형 리더: 당신의 자율성이 상대방의 협력과 조화를 이룰 수 있어요',
+          '격려하는 코치 같은 지원형 리더: 함께 자율적이고 따뜻한 팀을 만들 수 있어요',
         ],
         badMatchReasons: [
-          '⚡ 번개 같은 지시형 리더: 너무 체계적이고 지시적인 성향과 맞지 않을 수 있어요',
+          '번개 같은 지시형 리더: 너무 체계적이고 지시적인 성향과 맞지 않을 수 있어요',
         ],
         recommendations: [
           '필요할 때는 직접 개입도 해보세요',
