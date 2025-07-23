@@ -5,16 +5,7 @@ import { Clock, ArrowRight, Home } from 'lucide-react';
 const AllQuizzes = () => {
   return (
     <div className="max-w-7xl mx-auto">
-      {/* Home Button */}
-      <div className="mb-4 sm:mb-6">
-        <Link
-          to="/"
-          className="inline-flex items-center text-sm text-gray-600 hover:text-primary-600 transition-colors"
-        >
-          <Home className="h-4 w-4 mr-1" />
-          홈으로 가기
-        </Link>
-      </div>
+
 
       {/* Header */}
       <div className="mb-6 sm:mb-8">
